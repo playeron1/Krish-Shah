@@ -6,13 +6,15 @@
     margin:0;
     font-family:Arial;
     border: border-box;
-    scrollbar-color: darkorange black;
+    scrollbar-color: rgb(94, 93, 93) transparent;
+    scrollbar-width:thin;
   }
   .navbar{
      display: flex;
      width: 100%;
      align-items: center;
      justify-content:space-between;
+     padding-inline: 2rem;
      position: fixed;
      top: 0;
      background-color:transparent;
@@ -24,10 +26,10 @@ display:flex;
 .nav-text a{
     color:black;
     margin: 1.5rem;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 .nav-text a:hover{
-  color: darkorange;
+  color:cornflowerblue;
 }
 .nav-logo{
     background-color: transparent;
@@ -35,7 +37,7 @@ display:flex;
     display: flex;
 }
 .nav-logo h1{
-  font-size: 4.5rem;
+  font-size: 2.5rem;
 }
 .profile-name{
     color:black;
@@ -50,9 +52,10 @@ display:flex;
     font-size: 5rem;
 }
   .profession{
-      color: rgb(245, 116, 2);
+      color:rgb(82, 121, 192);
       font-size: 4rem;
       display: flex;
+      font-weight: 700;
       justify-content: center;
   }
   .social-links{

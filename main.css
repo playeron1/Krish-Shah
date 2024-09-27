@@ -141,25 +141,35 @@ margin: 1.25vb;
 .proj-content{
   display: flex;
   flex-wrap:wrap;
-  flex-direction:row;
-  font-size: 5vb;
+  text-wrap:balance;
   align-items: center;
   justify-content: center;
+  font-size: 5vb;
+  margin: 2vb;
 }
 .proj-title h2{
   font-size: 8vb;
   font-family: Montserrat;
   text-align: center;
 }
-.prj-text{
+.prj-logo{
+  border: 0px solid black;
+  border-radius: 10px;
   display: flex;
+  box-shadow: 0px 0px 3px gray ;
+  align-items: center;
+  font-family: "Fredoka",sans-serif;
+  margin: 2vb;
+  font-size: 3.5vb;
+  width: auto;
 }
 
 .prj-logo button{
-  font-size: 4vb;
+  font-size: 3.25vb;
+  margin-left: 1vh;
   display: flex;
   border-radius:10px;
-  width: 200px;
+  width: 160px;
   height: 80px;
   justify-content:space-evenly;
   align-items:center;
@@ -167,13 +177,16 @@ margin: 1.25vb;
 
 }
 .prj-logo button:hover{
-  border-radius: 40px;
+  border-radius: 30px;
   transition: all ease-in-out 0.1s;
 }
 footer{
-  height: 40px;
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
+  height: 30px;
   align-items: center;
-  margin-top: 10rem;
+  font-size: 0.5vb;
+}
+footer a{
+  margin:0.5vb;
 }

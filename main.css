@@ -8,7 +8,45 @@
   body{
    font-size: xx-small;
   }
+  .navbar{
+    display: none;
+  }
+  .intro-section{
+    text-align: center;
+  }
+  .social-links{
+    display: inline;
+  }
+  .social-content a{
+    font-size: 1rem;
+  }
+.social-content i{
+  font-size: 2rem;
 }
+.services .box{
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proj-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prj-logo p{
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .links{
+  display: none;
+}
+
+
+}
+
 *{
     scroll-behavior: smooth;
     border: border-box;
@@ -59,7 +97,6 @@
 .social-content a{
   margin: 1vh;
 }
-
 .social-links p{
     font-size: 5vb;
     font-weight: 450;

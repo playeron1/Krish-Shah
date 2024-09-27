@@ -17,6 +17,7 @@
   }
   .navbar{
     margin: 1vb;
+    margin-top: 2.5vh;
   }
   .nav-text{
     display: flex;
@@ -26,7 +27,7 @@
   }
 .nav-text a {
     color:black;
-    font-size:3vb;
+    font-size:3.25vb;
 }
 .nav-text a:hover{
   color: deepskyblue;
@@ -90,7 +91,8 @@
   .whoami{
     font-size: 3.5vb;
     display: flex;
-    font-style: italic;
+    font-weight: 400;
+    font-family: Inter;
     border-radius: 20px;
     box-shadow: 0px 0px 1px black;
   }
@@ -124,14 +126,14 @@ margin: 1.25vb;
     font-size: 3.5vb;
     justify-content: space-evenly; 
 }
-.progress-bar{
-  display: flex;
-  justify-content: center;
+.services{
+  margin-top: 10vb;
 }
-.skills h2{
-    text-align: center;
-    font-size: 8vb;
-    font-family: Montserrat;
+.services h2{
+  font-size: 8vb;
+  text-align: center;
+  font-family: Montserrat;
+  margin-bottom: 10vb;
 }
 .projects{
   margin-top: 5rem;
@@ -145,28 +147,16 @@ margin: 1.25vb;
   justify-content: center;
 }
 .proj-title h2{
-  display: flex;
-  font-size: 5vb;
-  justify-content: center;
+  font-size: 8vb;
+  font-family: Montserrat;
+  text-align: center;
 }
 .prj-text{
-  width: 20%;
   display: flex;
-  justify-content: center;
-  margin: 0.75rem;
-  border-radius: 20px;
-  height: 330px;
-  box-shadow: 0px 0px 5px gray;
 }
-.prj-logo{
-position: absolute;
-}
-.prj-logo p{
-  font-size: 1.5rem; 
-  font-weight: 600;
-}
+
 .prj-logo button{
-  font-size: 1.25rem;
+  font-size: 4vb;
   display: flex;
   border-radius:10px;
   width: 200px;
@@ -174,7 +164,7 @@ position: absolute;
   justify-content:space-evenly;
   align-items:center;
   color: white;
-  margin-top: 50px;
+
 }
 .prj-logo button:hover{
   border-radius: 40px;

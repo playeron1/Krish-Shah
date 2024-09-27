@@ -8,109 +8,70 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
 <body>
     <div class="navbar">
-        <div class="nav-logo">
-            <h1 class="text-gray-500">Krish Shah</h1>
-        </div>
             <div class="nav-text">
-                <p><a href="#home"><b><i class="fa-solid fa-house"></i> Home</b></a></p>
-                <p><a href="#about"><b><i class="fa-solid fa-user"></i> About Me</b></a></p>
-                <p><a href="#skills"><b><i class="fa-solid fa-laptop-code"></i> Skill</b></a></p>
-                <p><a href="#projects"><b><i class="fa-solid fa-diagram-project"></i> Project</b></a></p>
-                <p><a href="https://drive.google.com/file/d/1C7aAAUQ8K8aCYQQI6pM61tglcdLFzI6Q/view" target="_main"><i class="fa-solid fa-file"></i><b class="text-orange-500"> Resume</b></a></p>
-                <!--<p><img src="profile-pic.jpg" style="border-radius:100%;height: 50px;width: 50px;filter: drop-shadow(0px 0px 10px orange);"></p> -->
+                <a href="#about"><i class="fa-solid fa-user"></i> About</b></a>
+                <a href="#skills"><i class="fa-solid fa-laptop-code"></i> Skill</b></a>
+                <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Project</b></a>
+                <a href="https://drive.google.com/file/d/1C7aAAUQ8K8aCYQQI6pM61tglcdLFzI6Q/view" target="_main"><i class="fa-solid fa-file"></i>Resume</a>
                 </div>
-        </div>
-        
+    </div>  
     </div>
-    <div class="profile-name" id="home">
-        <h1>Hello there!👋🏻 <br>I'M <b class="text-orange-500">Krish</b></h1>
+    <div class="intro-section">
+      <div class="profile-name" id="home">
+        <h1>Hello!👋🏻 I'm Krish</h1>
     </div>
-    <div class = "profession"> 
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-      const professionText2 =  "A Software Engineer / Cyber Security Engineer";
-      const professionElement = document.querySelector('.profession');
-      
-      function typeText(element, text, speed) {
-          let index = 0;
-  
-          function type() {
-              if (index < text.length) {
-                  element.innerHTML += text.charAt(index);
-                  index++;
-                  setTimeout(type, speed);
-              }
-          }
-  
-          type();
-      }
-  
-      typeText(professionElement, professionText2, 50);
-  });
-  
-      </script>
-          </div>
-          <br><br><br><br><br>
     <div class="social-links">
        <div class="social-content">
-        <p class="text-4xl">FIND ME <b class="text-orange-500">ON</b></p>
+        <p class="text-3xl">I'm available <b class="text-orange-500">@</b></p>
         <a href="https://www.linkedin.com/in/krish-shah-cybersecurity/"><i class="fa-brands fa-linkedin-in text-5xl"></i></a>
         <a href="https://github.com/playeron1"><i class="fa-brands fa-github text-5xl"></i></a> 
         <a href="https://x.com/krish_shah10"><i class="fa-brands fa-x-twitter text-5xl"></i></a></p>
        </div>
     </div>  
+    </div>
     <div class="intro">
       <div class="title">
-        <h2 id="about">About <b class="text-orange-500">ME</b></h2>
+        <h2 id="about">About <b class="text-orange-500">Me</b></h2>
       </div>
       <div class="intro-text">
-        <br><p>LET ME <b class="text-orange-500">INTRODUCE</b> MYSELF</p><br>
+        <br><p>Let ME <b class="text-orange-500">INTRODUCE</b> Myself</p><br>
         <div class="whoami bg-gray-50">
                <div class="whoami-box text-slate-900">
                 I'm Krish Shah from Bangalore, India currently pursuing my Bachelors in Technology in Regular Computer Science <a href="https://www.google.com/maps/place/Gitam+University+Bengaluru/@13.2866479,77.5930016,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae3df04c9efe91:0x74ef0f7e2f81d564!8m2!3d13.2866427!4d77.5955765!16s%2Fg%2F1hjgjmxwt?entry=ttu"><b class="text-orange-500 italic">Gandhi Institute of Technology (GITAM) Bangalore Campus.</b></a> My passion lies in Cloud Security field and I desire to take up opportunities in these fields.</span>
                 I currently look forward for improving my skills in the cyber security industry and contribute my knowledge, skills and capabilities to organizations.
                </div>  
                <div class="whomai-img">
-                <img src="avataaars.png" style="height: 300px;width: 300px;">
+                <img src="avataaars.png" style="height: 150px;width: 150px;">
                </div>
         </div>
         <div class="services">
-            <br><p>My <b class="text-orange-500">Expertise</b></p><br>Here is what I do <br><br>
+            <br><p>My <b class="text-orange-500">Expertise</b></p><br>
             <div class="expertise">
                 <div class="box">
-                    <div class="box-logo">
-                      <p class=" mt-96 text-center">Front-End Web Development</p>
-                    </div>
-                    <div class="box-content">
-                      <img src="front-1.png" style="border-radius: 100px;width:100%;">
+                    <div class="box-logo ">
+                      <p class=" mt-1 text-center">Front-End Web Development</p>
                     </div>
                 </div>
                 <div class="box ">
                     <div class="box-logo">
-                      <p class="text-center mt-96">Java Programmer</p>
+                      <p class="mt-1 text-center">Cyber Security</p>
                     </div>
-                    <div class="box-content">
-                      <img src="code.png" style="height: auto; width: 100%;padding: 50px;">
-                    </div>
-                </div>
-                <div class="box ">
-                    <div class="box-logo">
-                      <p class="mt-96 text-center">Cyber Security</p>
-                    </div>
-                    <div class="box-content ">
-                      <img src="htb-1.png" style="height:auto;width: 100%;border-radius: 10px;" class="mt-10"><br><br><br>
-                    </div>
+                   
                 </div>
             </div>
         </div>
       </div>
     </div>
   <div class="skills" id="skills">
-    <h2 class=" skills-title mb-8">My <b class="text-orange-500">Skills</b></h2>
-        <div class="PL pb-14  bg-gray-50">
+    <h2 class=" skills-title mb-4">My <b class="text-orange-500">Skills</b></h2>
+        <div class="PL pb-14  bg-gray-80">
             <div class="progress-bar">
                 <div class="space-y-3" style="width: 80%;margin-left: 10rem;margin-top: 5rem;">             
                     <!-- Progress -->
@@ -177,18 +138,14 @@
                   <p class=" mt-36 text-center">Amazon Clone</p>
                   <button class="bg-black"><i class="fa-brands fa-github text-5xl"></i><a href="https://github.com/playeron1/Amazon-Clone">Github</a></button>
                 </div>
-                <div class="box-content">
-                  <img src="amazon_logo.png" style="border-radius: 20px;">
-                </div>
+                
             </div>
             <div class="prj-text">
               <div class="prj-logo">
                 <p class=" mt-36 text-center">Event Scheduler</p>
                 <button class="bg-black"><i class="fa-brands fa-github text-5xl"></i><a>Github</a></button>
               </div>
-              <div class="prj-content">
-                <img src="time-table.png" style="border-radius: 20px;height: 150px;">
-              </div>
+             
           </div>
             </div>
         </div>

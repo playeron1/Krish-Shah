@@ -1,106 +1,84 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media screen and (max-width:1000px)
+{
+  body{
+   font-size: xx-small;
+  }
+}
 *{
     scroll-behavior: smooth;
-    margin:0;
-    font-family:Arial;
     border: border-box;
     scrollbar-color: rgb(94, 93, 93) transparent;
     scrollbar-width:thin;
   }
   .navbar{
-     display: flex;
-     width: 100%;
-     align-items: center;
-     justify-content:space-between;
-     padding-inline: 2rem;
-     position: fixed;
-     top: 0;
-     background-color:transparent;
-     backdrop-filter:blur(10px);
-}
-.nav-text{
-display:flex;
-}
-.nav-text a{
+    margin: 1vb;
+  }
+  .nav-text{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    font-family: "Inter";
+  }
+.nav-text a {
     color:black;
-    margin: 1.5rem;
-    font-size: 1.5rem;
+    font-size:3vb;
 }
 .nav-text a:hover{
-  color:cornflowerblue;
+  color: deepskyblue;
 }
-.nav-logo{
-    background-color: transparent;
-    filter: drop-shadow(blur);
-    display: flex;
-}
-.nav-logo h1{
-  font-size: 2.5rem;
+.intro-section{
+  color:black;
 }
 .profile-name{
-    color:black;
+    
     justify-content: center;
-    margin: 20vb;
+    align-items: center;
+    margin-top: 15vh;
     display: flex;
+    font-family: "Fredoka",sans-serif;
 }
 .profile-name h1{
-  font-size: 5rem;
-}
-.profile-name p{
-    font-size: 5rem;
-}
-  .profession{
-      color:rgb(82, 121, 192);
-      font-size: 4rem;
-      display: flex;
-      font-weight: 700;
-      justify-content: center;
-  }
+  font-size:10vb;
+} 
   .social-links{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    width: auto;
+    text-overflow:0;
 }
 .social-content{
-  box-shadow: 0px 0px 5px gray;
-  border-radius: 25px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .social-content a{
-  margin: 0.75rem;
+  margin: 1vh;
 }
-.social-content:hover{
-  transform: scale(1.1);
-  transition: all ease-in-out 0.2s;
-}
+
 .social-links p{
-    font-size: 2rem;
-    font-weight: 900;
-    margin: 1vb;
-}
+    font-size: 5vb;
+    font-weight: 450;
+    margin: 2vb;
+}  
 .title{
-  margin-top: 5rem;
+  margin-top: 15vb;
 }
 .title h2{
   text-align: center;
-  font-size: 5rem;
+  font-size:8vb;
+  font-family: "Montserrat";
 }
-.intro{
-      font-size: 2rem;
-      text-align: justify;
-  }  
   .intro-text{
-      width:100%;
-      font-size: 2rem;
-      padding: 100px;
+      font-size: 2vb;
+      padding: 40px;
+      text-align: center;
   }
   .intro-text p{
-    font-size: 3rem;
+    font-size: 4vb;
   }
   .intro-text a{
     text-decoration: none;
@@ -110,18 +88,15 @@ display:flex;
     color: orange;
   }
   .whoami{
-    font-size: 2rem;
-    padding: 2.5%;
-    width: auto;
+    font-size: 3.5vb;
     display: flex;
-    width: auto;
+    font-style: italic;
     border-radius: 20px;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 1px black;
   }
   .whoami-box{
     width: 85%;
+    padding: 20px;
     margin-right: 5vb;
   }
   .expertise{
@@ -129,24 +104,25 @@ display:flex;
     display: flex;
     justify-content: center;
   }
+  .services p{
+    font-size: 5vb;
+  }
   .box{
-    width: 70%;
+    width:25%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 0.5rem;
-    border-radius: 50px;
-    box-shadow: 0px 0px 10px gray;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.073);
+    border: 2px solid gray;
   } 
-.box-logo{
-  position: absolute;
-  height: auto;
-  width: auto;
+.box{
+display: flex;
+margin: 1.25vb;
 }
 .box-logo p{
-    font-size: 1.5rem; 
-    font-weight: 600;
-    height: auto;
-    width: auto;
+    font-size: 3.5vb;
+    justify-content: space-evenly; 
 }
 .progress-bar{
   display: flex;
@@ -154,7 +130,8 @@ display:flex;
 }
 .skills h2{
     text-align: center;
-    font-size: 5rem;
+    font-size: 8vb;
+    font-family: Montserrat;
 }
 .projects{
   margin-top: 5rem;
@@ -163,13 +140,13 @@ display:flex;
   display: flex;
   flex-wrap:wrap;
   flex-direction:row;
-  font-size: 5rem;
+  font-size: 5vb;
   align-items: center;
   justify-content: center;
 }
 .proj-title h2{
   display: flex;
-  font-size: 5rem;
+  font-size: 5vb;
   justify-content: center;
 }
 .prj-text{

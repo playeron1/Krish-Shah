@@ -9,6 +9,20 @@
    font-size: xx-small;
   }
   .navbar{
+    display:block;
+  }
+  .nav-text a{
+    display: flex;
+    width: 25%;
+    flex-wrap:wrap;
+    text-wrap:balance;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.15vb;
+    padding: 15px;
+
+  }
+  .nav-text i{
     display: none;
   }
   .intro-section{

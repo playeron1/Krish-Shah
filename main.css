@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-@media screen and (max-width:1000px)
+@media screen and (max-width:900px)
 {
   .navbar{
     width: 20%;

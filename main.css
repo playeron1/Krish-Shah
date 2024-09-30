@@ -17,7 +17,12 @@
     color: none;
   }
   .intro-text{
-    font-size:0.5vb;
+    font-size:0.5rem;
+  }
+  .intro-text .whoami-box{
+    font-size: 2.1vh;
+    width: fit-content;
+    margin-left: 30px;
   }
   .nav-text i{
     display: none;
@@ -57,15 +62,14 @@
     margin-right: auto;
   }
 .social-content i{
-  font-size: 8.5vb;
+  font-size: 10vb;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 .services .box{
-  width: 25rem;
+  width: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +80,7 @@
   justify-content: center;
 }
 .prj-logo p{
-  width: 12rem;
+  width: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,8 +88,9 @@
 footer .links{
   display: none;
 }
-footer{
-  width: 20vh;
+footer p{
+  width: fit-content;
+  height:fit-content;
 
 }
 

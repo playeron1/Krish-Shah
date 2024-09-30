@@ -5,57 +5,85 @@
 
 @media screen and (max-width:1000px)
 {
-  *{
-    margin: 0;
-  }
-
-  body{
-   font-size: xx-small;
-  }
   .navbar{
-    display:block;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
+    justify-content: left;
+  }
+  .nav-text{
+    font-size: xx-small;
   }
   .nav-text a{
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
-    border: 2px solid black;
-    border-radius: 1vb;
-    margin-right: -65rem;
-    font-size: 0.05rem;
-    padding: 1px 0px 5px;
-    margin: 2px;
-    justify-content: left;
-    align-items:start;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(161, 158, 158, 0.095);
+    font-size: xx-large;
+    padding: 0px 0px 0px;
+    margin: 1.75px;
 
   }
+  .intro-section h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .nav-text a:hover{
+    color: none;
+  }
   .intro-text{
-    margin: 1rem;
     font-size:1vb;
   }
   .nav-text i{
     display: none;
   }
-  .intro-section{
+  .social-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
-  .social-links{
-    display: inline;
+  .profile-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .social-content a{
-    font-size: 1rem;
+    font-size: 1vh;
   }
   .social-links p{
     display: flex;
     font-size: xx-small;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 .social-content i{
-  font-size: 2rem;
+  font-size: 8vb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .services .box{
-  width: 20rem;
+  width: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,9 +126,10 @@ footer .links{
 .nav-text a {
     color:black;
     font-size:3.25vb;
+    font-family: Montserrat;
 }
 .nav-text a:hover{
-  color: deepskyblue;
+  color: rgb(255, 170, 0);
 }
 .intro-section{
   color:black;
@@ -140,8 +169,8 @@ footer .links{
 }
 .social-links p{
     font-size: 5vb;
-    font-weight: 450;
     margin: 2vb;
+
 }  
 .title{
   margin-top: 15vb;

@@ -6,25 +6,7 @@
 @media screen and (max-width:900px)
 {
   .navbar{
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: left;
-  }
-  .nav-text{
-    font-size: xx-small;
-  }
-  .nav-text a{
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction: row;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgba(161, 158, 158, 0.095);
-    font-size: xx-large;
-    padding: 0px 0px 0px;
-    margin: 1.75px;
-
+    display: none;
   }
   .intro-section h1{
     display: flex;
@@ -35,7 +17,7 @@
     color: none;
   }
   .intro-text{
-    font-size:1vb;
+    font-size:0.5vb;
   }
   .nav-text i{
     display: none;
@@ -75,7 +57,7 @@
     margin-right: auto;
   }
 .social-content i{
-  font-size: 8vb;
+  font-size: 8.5vb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,9 +85,8 @@ footer .links{
   display: none;
 }
 footer{
-  height:auto;
-  width: auto;
-  
+  width: 20vh;
+
 }
 
 

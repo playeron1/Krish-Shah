@@ -102,6 +102,11 @@
 footer .links{
   display: none;
 }
+footer{
+  height:auto;
+  width: auto;
+  
+}
 
 
 }

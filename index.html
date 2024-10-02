@@ -16,17 +16,24 @@
   </head>
 <body>
     <div class="navbar">
-            <div class="nav-text">
+            <div class="nav-text" id="nav-text">
                 <a href="#about"><i class="fa-solid fa-user"></i> About</b></a>
                 <a href="#skills"><i class="fa-solid fa-laptop-code"></i> Skill</b></a>
                 <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Project</b></a>
                 <a href="https://medium.com/@krishnshah2003"><i class="fa-brands fa-medium"></i> Blogs</a>
                 <a href="https://drive.google.com/file/d/1C7aAAUQ8K8aCYQQI6pM61tglcdLFzI6Q/view" target="_main"><i class="fa-solid fa-arrow-down"></i> Resume</a>
-                <a><i class="fa-regular fa-sun"></i></a>
+                <button type ="button" onclick="darkfn()" class="darkmode"><i class="fa-regular fa-sun"></i></button>
                 </div>
+                <script>
+                  function darkfn()
+                  {
+                    document.body.style.backgroundColor = "skyblue";
+                    document.body.style.color = "white";
+                  }
+                </script>
     </div>  
     </div>
-    <div class="intro-section">
+    <div class="intro-section" id="intro-section">
       <div class="profile-name" id="home">
         <h1>Hello!👋🏻 I'm Krish</h1>
     </div>

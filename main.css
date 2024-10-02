@@ -131,6 +131,9 @@ footer{
     font-family: Montserrat;
     font-weight: 700;
 }
+.nav-text button{
+  font-size: 3.35vb;
+}
 .intro-section{
   color:#022C43;
 }

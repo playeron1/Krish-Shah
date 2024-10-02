@@ -17,14 +17,8 @@
     color: none;
   }
   .whoami{
-    border: 2px solid black;
     margin-left: auto;
     margin-right: auto;
-    text-align: justify;
-  }
-  .intro-text .whoami-box{
-    font-size: 2.5vh;
-    width: fit-content;
   }
   .nav-text i{
     display: none;
@@ -81,6 +75,12 @@
   display: flex;
   margin-left:auto ;
   margin-right: auto;
+  width: 80%;
+}
+.services .box{
+  height: 20vh;
+  background-color:rgba(128, 128, 128, 0.158);
+  font-family: "Fredoka",sans-serif;
 }
 .proj-content{
   display: flex;
@@ -126,15 +126,13 @@ footer{
     font-family: "Inter";
   }
 .nav-text a {
-    color:black;
+    color:#022C43;
     font-size:3.25vb;
     font-family: Montserrat;
-}
-.nav-text a:hover{
-  color: rgb(255, 170, 0);
+    font-weight: 700;
 }
 .intro-section{
-  color:black;
+  color:#022C43;
 }
 .intro-section img{
   height: 20vb;
@@ -172,8 +170,12 @@ footer{
 .social-links p{
     font-size: 5vb;
     margin: 2vb;
-
+    font-family: "Fredoka",sans-serif;
 }  
+.social-links i{
+  font-size: 7vh;
+  margin-top: 1.5vh;
+}
 .title{
   margin-top: 15vb;
 }
@@ -203,14 +205,24 @@ footer{
   .whoami{
     font-size: 3.5vb;
     display: flex;
-    font-weight: 400;
-    font-family: Inter;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 80%;
+    font-family:Inter;
     border-radius: 20px;
-    box-shadow: 0px 0px 1px black;
+    box-shadow: 0px 0px 2px rgb(1, 55, 113);
+    border-color: #022C43;
+  }
+  .whoami a:hover{
+    text-decoration: underline;
+    color:red;
   }
   .whoami-box{
     padding: 20px;
-    margin-right: 5vb;
+    margin-right: 1vb;
     text-align: justify;
     font-size: auto;
   }
@@ -308,6 +320,9 @@ footer{
   height: 30px;
   align-items: center;
   font-size: 0.5vb;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 600;
 }
 footer a{
   margin:0.5vb;

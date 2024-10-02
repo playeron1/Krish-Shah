@@ -22,13 +22,18 @@
                 <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Project</b></a>
                 <a href="https://medium.com/@krishnshah2003"><i class="fa-brands fa-medium"></i> Blogs</a>
                 <a href="https://drive.google.com/file/d/1C7aAAUQ8K8aCYQQI6pM61tglcdLFzI6Q/view" target="_main"><i class="fa-solid fa-arrow-down"></i> Resume</a>
-                <button type ="button" onclick="darkfn()" class="darkmode"><i class="fa-regular fa-sun"></i></button>
+                <button type ="button" onclick="darkfn()" ondblclick="lightmode()" class="darkmode"><i class="fa-regular fa-sun"></i></button>
                 </div>
                 <script>
                   function darkfn()
                   {
                     document.body.style.backgroundColor = "skyblue";
                     document.body.style.color = "white";
+                  }
+                  function lightmode()
+                  {
+                    document.body.style.backgroundColor = "white";
+                    document.body.style.color = "black";
                   }
                 </script>
     </div>  

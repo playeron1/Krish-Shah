@@ -8,6 +8,9 @@
   .navbar{
     display: none;
   }
+  .intro-section{
+    color: black;
+  }
   .intro-section h1{
     display: flex;
     justify-content: center;
@@ -30,6 +33,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: black;
   }
   .profile-name{
     display: flex;
@@ -118,6 +122,7 @@ footer{
   .navbar{
     margin: 1vb;
     margin-top: 2.5vh;
+    margin-bottom: -8vh;
   }
   .nav-text{
     display: flex;
@@ -125,17 +130,23 @@ footer{
     justify-content:space-evenly;
     font-family: "Inter";
   }
+  #mobile-button{
+    display: none;
+  }
 .nav-text a {
     color:#022C43;
     font-size:3.25vb;
     font-family: Montserrat;
     font-weight: 700;
+    
 }
 .nav-text button{
   font-size: 3.35vb;
 }
 .intro-section{
   color:#022C43;
+  background-image: url(wave-blue-background-wallpaper-free-vector.jpg); 
+background-size:contain; 
 }
 .intro-section img{
   height: 20vb;
@@ -159,28 +170,33 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
-    text-overflow:0;
 }
 .social-content{
   display: flex;
   font-size: auto;
+  justify-content: center;
+  align-items: center;
 }
 .social-content a{
   margin: 1vh;
   font-size: auto;
+  color: white;
 }
 .social-links p{
     font-size: 5vb;
     margin: 2vb;
     font-family: "Fredoka",sans-serif;
+    color: white;
 }  
 .social-links i{
   font-size: 7vh;
   margin-top: 1.5vh;
 }
 .title{
-  margin-top: 15vb;
+  margin-top: 10vb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .title h2{
   text-align: center;
@@ -271,7 +287,7 @@ margin: 1.25vb;
   margin-bottom: 10vb;
 }
 .projects{
-  margin-top: 5rem;
+  margin-top: 20vh;
 }
 .proj-content{
   display: flex;

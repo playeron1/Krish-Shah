@@ -9,6 +9,7 @@
     display: none;
   }
   .intro-section{
+    margin-top: -120px;
     color: black;
   }
   .intro-section h1{
@@ -145,15 +146,17 @@ footer{
 }
 .intro-section{
   color:#022C43;
-  background-image: url(wave-blue-background-wallpaper-free-vector.jpg); 
-background-size:contain; 
+  background-image: url(pngtree-cool-wave-liquid-background-for-landing-page-website-image_1463455.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 75%;
+  margin-top: 200px;
 }
 .intro-section img{
   height: 20vb;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  filter: drop-shadow(0px 0px 8px gray);
+  filter: drop-shadow(0px 0px 18px #022c43);
 }
 .profile-name{
     
@@ -180,13 +183,13 @@ background-size:contain;
 .social-content a{
   margin: 1vh;
   font-size: auto;
-  color: white;
+  color: black;
 }
 .social-links p{
     font-size: 5vb;
     margin: 2vb;
     font-family: "Fredoka",sans-serif;
-    color: white;
+    color: black;
 }  
 .social-links i{
   font-size: 7vh;
@@ -289,6 +292,7 @@ margin: 1.25vb;
 .projects{
   margin-top: 20vh;
 }
+
 .proj-content{
   display: flex;
   flex-wrap:wrap;
@@ -312,7 +316,7 @@ margin: 1.25vb;
   padding: 10px 10px 10px;
   align-items: center;
   font-family: "Fredoka",sans-serif;
-  margin: 1.25vb;
+  margin: 10px;
   font-size: 2.85vb;
   width: auto;
 }

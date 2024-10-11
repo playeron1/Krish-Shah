@@ -271,8 +271,9 @@ display: flex;
 margin: 1.25vb;
 }
 .box-logo{
-  height: 8vb;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }

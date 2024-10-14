@@ -5,9 +5,6 @@
 
 @media screen and (max-width:800px)
 {
-  .navbar{
-    display: none;
-  }
   .intro-section{
     margin-top: -120px;
     color: black;
@@ -17,6 +14,17 @@
     justify-content: center;
     text-align: center;
   }
+  .nav-text{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    background-color: #022C43;
+  }
+  .nav-text a{
+    width: 100%;
+    margin: 1vi;
+    justify-content: center;
+  }
   .nav-text a:hover{
     color: none;
   }
@@ -24,9 +32,10 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .nav-text i{
-    display: none;
+  .whoami-box{
+    font-size: 5vi;
   }
+
   .social-links{
     display: flex;
     flex-direction: row;
@@ -42,21 +51,25 @@
     align-items: center;
   }
   .social-content{
-    display: flex;
+    display: flexbox;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction:row;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
   .social-content{
-    width: 75%;
+    width: 70%;
     display: flex;
-
   }
   .social-content a{
-    font-size: 1rem;
+    font-size: 1vi;
+  }
+  .social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .social-links p{
     display: flex;
@@ -71,20 +84,27 @@
   font-size: 3rem;
 }
 .services .box{
-  width: 30rem;
+  width: 30vi;
   display: flex;
+  flex-direction: column;
+  height: 25vi;
   justify-content: center;
   align-items: center;
 }
-.proj-title{
-  display: flex;
-  margin-left:auto ;
-  margin-right: auto;
-  width: 80%;
+.projects{
+  margin-top: -20vi;
 }
-.services .box{
-  height: 20vh;
-  background-color:rgba(128, 128, 128, 0.158);
+.proj-title h2{
+  display: flex;
+  justify-content: center;
+  margin-top: -30vi;
+}
+.expertise{
+  margin-top: -50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   font-family: "Fredoka",sans-serif;
 }
 .proj-content{
@@ -96,7 +116,7 @@
   padding:5px 5px 5px;
 }
 .prj-logo p {
-  width: 10rem;
+  width: 45vi;
   padding: 5px 5px 5px;
   display: flex;
   align-items: center;
@@ -113,12 +133,23 @@ footer{
 
 }
 
+
+/*Desktop */
+
 *{
   margin: 0;
     scroll-behavior: smooth;
     border: border-box;
-    scrollbar-color: rgb(94, 93, 93) transparent;
+    scrollbar-color: #022c43 transparent;
     scrollbar-width:thin;
+  }
+  body{
+   /* background-image: url(12818.jpg);*/
+ color: white;
+ background-image: url(ggfyjy8.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ 
   }
   .navbar{
     margin: 1vb;
@@ -135,21 +166,49 @@ footer{
     display: none;
   }
 .nav-text a {
-    color:#022C43;
-    font-size:3.25vb;
-    font-family: Montserrat;
+    /*color:#022C43;*/
+    color: white;
+    font-size:3vb;
+    font-family: "Montserrat";
     font-weight: 700;
     
 }
 .nav-text button{
   font-size: 3.35vb;
 }
+
 .intro-section{
-  color:#022C43;
-  background-image: url(pngtree-cool-wave-liquid-background-for-landing-page-website-image_1463455.jpg);
+  /*color:#022C43;*/
+  color: white;
   background-repeat: no-repeat;
   background-size: 100% 75%;
-  margin-top: 200px;
+  margin-top: 1px;
+  height: 45rem;
+  border-bottom: 25px;
+  display: block;
+  /*background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);*/
+  background-size: cover;
+  animation-name: slide;
+ animation-duration: 1s;
+}
+@keyframes slide{
+  0%{
+   transform: translateX(-30%);
+  }
+}
+.intro-section button{
+  margin-left: 43vi;
+  font-weight: 600;
+  font-family: Montserrat;
+  font-size: 3vb;
+  margin-right: auto;
+  border: 2.5px solid black;
+  padding: 10px;
+}
+.intro-section button:hover{
+  background-color: white;
+  color: #022C43;
+  transition: ease-in-out 0.2s;
 }
 .intro-section img{
   height: 20vb;
@@ -165,9 +224,13 @@ footer{
     margin-top: 15vh;
     display: flex;
     font-family: "Fredoka",sans-serif;
+     animation-name: slide;
+ animation-duration: 1s;
+ 
 }
 .profile-name h1{
   font-size:10vb;
+  color: white;
 } 
   .social-links{
     display: flex;
@@ -183,13 +246,14 @@ footer{
 .social-content a{
   margin: 1vh;
   font-size: auto;
-  color: black;
+  /*color: black;*/
+  color: white;
 }
 .social-links p{
     font-size: 5vb;
     margin: 2vb;
     font-family: "Fredoka",sans-serif;
-    color: black;
+    color: white;
 }  
 .social-links i{
   font-size: 7vh;
@@ -206,16 +270,13 @@ footer{
   font-size:8vb;
   font-family: "Montserrat";
 }
+
   .intro-text{
-      font-size: 2vb;
-      padding: 40px;
       text-align: center;
-      font-family: Montserrat;
-     
   }
   .intro-text p{
-    font-size: 4vb;
-    font-family: "Inter";
+    font-size: 3.5vb;
+    font-family: "Montserrat";
   }
   .intro-text a{
     text-decoration: none;
@@ -227,23 +288,21 @@ footer{
   .whoami{
     font-size: 3.5vb;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    width: 80%;
+    width: 85%;
+    padding: 30px 10px 30px;
     font-family:Inter;
     border-radius: 20px;
-    box-shadow: 0px 0px 2px rgb(1, 55, 113);
+    box-shadow: 0px 0px 20px rgb(1, 55, 113);
     border-color: #022C43;
-  }
-  .whoami a:hover{
-    text-decoration: underline;
-    color:red;
+    animation-name: slide;
+      animation-duration: 1s;
+      animation-delay: 1s;
   }
   .whoami-box{
-    padding: 20px;
+    padding: 18px;
     margin-right: 1vb;
     text-align: justify;
     font-size: auto;
@@ -253,22 +312,42 @@ footer{
     display: flex;
     justify-content: center;
   }
+  .expertise{
+    display: flex;
+    flex-wrap: wrap;
+    }
   .services p{
     font-size: 5vb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    animation-name: slide;
+      animation-duration: 1s;
+      animation-delay: 3s;
+      animation-timeline: scroll(x);
   }
   .box{
-    width:20%;
-    font-family: Inter;
+    width:12%;
+    font-family: Fredoka;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    background-color: rgba(128, 128, 128, 0.073);
-    border: 1px solid rgba(128, 128, 128, 0.514);
+    background-color: rgba(175, 174, 174, 0);
+    border: 2px solid skyblue;
+    box-shadow: 3px 3px 0px skyblue;
+    margin: 1.25vb;
+    animation-name: slide;
+      animation-duration: 1s;
+      animation-delay: 3s;
+      animation-timeline: scroll(x);
   } 
-.box{
-display: flex;
-margin: 1.25vb;
+.box:hover{
+  background-color: white;
+  color: #022C43;
+  transition: ease-in-out 0.2s;
+  cursor:default;
 }
 .box-logo{
   height: auto;
@@ -279,6 +358,7 @@ margin: 1.25vb;
 }
 .box-logo p{
     font-size: 3.5vb;
+    height: 5vi;
     justify-content: space-evenly; 
 }
 .services{
@@ -292,6 +372,9 @@ margin: 1.25vb;
 }
 .projects{
   margin-top: 20vh;
+  animation-name: slide;
+      animation-duration: 1s;
+      animation-delay: 3s;
 }
 
 .proj-content{
@@ -309,19 +392,26 @@ margin: 1.25vb;
   text-align: center;
 }
 .prj-logo{
-  border: 1px solid gray;
   border-radius: 15px;
   display: flex;
-  background-color: rgba(128, 128, 128, 0.073);
-    border: 1px solid rgba(128, 128, 128, 0.514);
+  background-color: rgba(128, 128, 128, 0);
+  border: 2px solid skyblue;
+  box-shadow: 5px 3px skyblue;
   padding: 10px 10px 10px;
   align-items: center;
   font-family: "Fredoka",sans-serif;
   margin: 10px;
   font-size: 2.85vb;
   width: auto;
+  animation-name: slide;
+      animation-duration: 1s;
+      animation-delay: 6s;
 }
-
+.prj-logo:hover{
+  background-color: white;
+  color: #022C43;
+  transition: ease-in-out 0.2s;
+}
 .prj-logo button{
   font-size: 2.85vb;
   margin-left: 1vh;

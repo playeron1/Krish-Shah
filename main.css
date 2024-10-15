@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     border: 1vi solid black;
-    background-color:#022C43;
+    background-image: linear-gradient(10deg,#022c4300,#022c43,rgba(0, 0, 0, 0.377));
     align-items: center;
     justify-content: center;
     width: 97vi;
@@ -45,7 +45,7 @@
     display: flex;
   }
   .whoami-box{
-    font-size: 4vi;
+    font-size: 5vi;
     text-spacing-trim:trim-all;
   }
   .intro-section .resume{
@@ -108,6 +108,15 @@
   justify-content: center;
   align-items: center;
 }
+.volunteering{
+  margin-top: -20vi;
+}
+.club-logo p{
+  font-size: 5vi;
+}
+.club-logo img{
+  display: none;
+}
 .projects{
   margin-top: -20vi;
 }
@@ -144,7 +153,6 @@ footer .links{
   display: none;
 }
 footer{
-  background-color: darkorange;
   padding: 40px 40px 40px;
 }
 
@@ -358,9 +366,7 @@ footer{
     margin: 1.25vb;
     animation-name: slide;
       animation-duration: 1s;
-      animation-delay: 3s;
-      animation-timeline: scroll(x);
-  } 
+      } 
 .box:hover{
   background-color: white;
   color: #022C43;
@@ -381,6 +387,9 @@ footer{
 }
 .services{
   margin-top: 10vb;
+  
+  animation-name: slide;
+ animation-duration: 1s;
 }
 .services h2{
   font-size: 8vb;
@@ -388,6 +397,57 @@ footer{
   font-family: Montserrat;
   margin-bottom: 10vb;
 }
+.volunteering{
+  margin-top: 10vi;
+  animation-name: slide;
+      animation-duration: 1s;
+      animation-delay: 3s;
+}
+.heading{
+  font-size: 8vb;
+  font-family: Montserrat;
+  text-align: center;
+  margin-bottom: 5vi;
+  font-weight: 700;
+}
+.club-text{
+  font-size: 3vb;
+  font-family: Fredoka;
+}
+.club-text{
+  border: 0px solid black;
+}
+.club-logo{
+  border: 2px solid skyblue;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0px skyblue;
+  padding: 10px 10px 10px;
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: slide;
+      animation-duration: 1s;
+      animation-delay: 3s;
+}
+.club-logo:hover{
+  background-color: white;
+  color: #022C43;
+  transition: ease-in-out 0.2s;
+}
+.club-logo p{
+  font-family: Inter;
+  margin-top: 20px;
+  margin-right: 5vi;
+}
+.club-logo img{
+margin-left: auto;
+margin-right: auto;
+border: 2px solid black;
+}
+
 .projects{
   margin-top: 20vh;
   animation-name: slide;
@@ -423,7 +483,6 @@ footer{
   width: auto;
   animation-name: slide;
       animation-duration: 1s;
-      animation-delay: 6s;
 }
 .prj-logo:hover{
   background-color: white;

@@ -45,7 +45,7 @@
     display: flex;
   }
   .whoami-box{
-    font-size: 5vi;
+    font-size: 4.25vi;
     text-spacing-trim:trim-all;
   }
   .intro-section .resume{
@@ -315,7 +315,7 @@ footer{
     color: orange;
   }
   .whoami{
-    font-size: 3.5vb;
+    font-size: 3.2vb;
     display: flex;
     align-items: center;
     margin-left: auto;

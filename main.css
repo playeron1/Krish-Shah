@@ -530,7 +530,7 @@ footer p{
   justify-content: center;
 }
 .links a{
-  padding: 9px 9px 9px;
+  padding: 9px 10px 8px;
   display: flex;
   justify-content: center;
   border-radius:25px;

@@ -308,11 +308,7 @@ footer{
     font-family: "Montserrat";
   }
   .intro-text a{
-    text-decoration: none;
-  }
-  .intro-text a:hover{
-    text-decoration:underline;
-    color: orange;
+    text-decoration: underline dotted black;
   }
   .whoami{
     font-size: 3.2vb;

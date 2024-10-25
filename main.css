@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-@media screen and (max-width:800px)
+@media screen and (max-width:700px)
 {
   .intro-section h1{
     display: flex;
@@ -14,8 +14,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 1vi solid black;
-    background-image: linear-gradient(10deg,#022c4300,#022c43,rgba(0, 0, 0, 0.377));
+    border: 1px solid white;
+    background-color: black;
     align-items: center;
     justify-content: center;
     width: 97vi;
@@ -31,7 +31,7 @@
     display: none;
   }
   .intro{
-    margin-top: 15vb;
+    margin-top: 1vh;
   }
   .title{
     margin-left: auto;
@@ -49,8 +49,8 @@
     text-spacing-trim:trim-all;
   }
   .intro-section .resume{
-    border: 2px solid white;
-    margin-left: 65px;
+    border: 2px solid black;
+    justify-content: center;
     margin-top: 20px;
   }
   .social-links{
@@ -67,20 +67,8 @@
     align-items: center;
   }
   .social-content{
-    display: flexbox;
-    flex-wrap: wrap;
-    flex-direction:row;
-    align-items: center;
+    display: inline;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .social-content{
-    width: 70%;
-    display: flex;
-  }
-  .social-content a{
-    font-size: 1vi;
   }
   .social-links{
     display: flex;
@@ -88,17 +76,12 @@
     align-items: center;
   }
   .social-links p{
-    display: flex;
-    font-size: xx-small;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-.social-content i{
-  font-size: 3rem;
-}
 .services .box{
   width: 44vi;
   text-wrap: wrap;
@@ -115,7 +98,7 @@
   font-size: 10vi;
 }
 .club-logo p{
-  font-size: 5vi;
+  font-size: 4vi;
 }
 .club-logo img{
   display: none;
@@ -535,7 +518,7 @@ footer p{
 }
 .links i{
   border: 2px solid  black;
-  border-radius: 25px;
+  border-radius: 35px;
   padding: 8px 8px ;
   display: flex;
   justify-content: center;

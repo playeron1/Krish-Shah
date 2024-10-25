@@ -25,19 +25,6 @@
                 <a href="https://drive.google.com/file/d/1C7aAAUQ8K8aCYQQI6pM61tglcdLFzI6Q/view" target="_main"><i class="fa-solid fa-arrow-down"></i> Resume</a>
                 <button type ="button" onclick="darkfn()" ondblclick="lightmode()" class="darkmode"><i class="fa-regular fa-sun"></i></button>
             </div>
-     
-                <script>
-                  function darkfn()
-                  {
-                    document.body.style.backgroundColor = "skyblue";
-                    document.body.style.color = "white";
-                  }
-                  function lightmode()
-                  {
-                    document.body.style.backgroundColor = "white";
-                    document.body.style.color = "black";
-                  }
-                </script>
     </div>  
     <div class="intro-section" id="intro-section">
       <div class="profile-name" id="home">
@@ -54,7 +41,7 @@
         <a href="mailto:krishnimeshshah@gmail.com"><i class=" email fa-regular fa-envelope text-5xl hover:text-white hover:bg-red-700"></i></a></p>
        </div>
     </div>  
-    <button class="resume" style="margin-top: 5vh;"><a href="https://drive.google.com/file/d/1C7aAAUQ8K8aCYQQI6pM61tglcdLFzI6Q/view"><i class="fa-regular fa-circle-down"></i> Download CV</a></button>
+    <button class="resume" style="margin-top: 5vh;font-weight: 800;"><a href="https://drive.google.com/file/d/1C7aAAUQ8K8aCYQQI6pM61tglcdLFzI6Q/view"><i class="fa-regular fa-circle-down"></i> Download CV</a></button>
     </div>
     <div class="intro">
       <div class="title">
@@ -62,17 +49,21 @@
       </div>
       <div class="intro-text">
         <br><p>Let Me <b class="text-sky-200 underline">Introduce</b> Myself</p><br>
-        <div class="whoami bg-gray-200">
+        <div class="whoami">
                <div class="whoami-box text-slate-700">
-                <b class="text-sky-700">I'm</b><br> 
-                 <br>📍 From Bangalore
-                 <br>🏫 Pursuing Bachelors in Computer Science from <a href="https://www.google.com/maps/place/Gitam+University+Bengaluru/@13.2866479,77.5930016,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae3df04c9efe91:0x74ef0f7e2f81d564!8m2!3d13.2866427!4d77.5955765!16s%2Fg%2F1hjgjmxwt?entry=ttu"><b class="text-sky-800">GITAM BLR</b></a> 
-                 <br>⚡ Passionated in Cybersecurity
-                <br>🌱 Currently looking forward to upskill and make contributions
+                <b class="text-white text-3xl">I'm</b><br> 
+                 <p class="text-white">
+                  <br>📍From Bangalore
+                 <br>🏫Pursuing Bachelors in Computer Science from <a href="https://www.google.com/maps/place/Gitam+University+Bengaluru/@13.2866479,77.5930016,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae3df04c9efe91:0x74ef0f7e2f81d564!8m2!3d13.2866427!4d77.5955765!16s%2Fg%2F1hjgjmxwt?entry=ttu" class="hover:bg-white hover:text-sky-800 hover:rounded-md">GITAM BLR</a> 
+                 <br>⚡Passionated in Cybersecurity
+                <br>🌱Currently looking forward to upskill and make contributions
                 <br> 🏀 Interested in playing basketball  <b>&</b> 🏸 playing badminton
                 <br> 🎹 Interested in listening music and playing piano
+                 </p>
                </div>
-              <img src="pic.jpg" style="height: 30vi; border: 2px solid black;margin-right: 1vi;border-radius:25px;"/> 
+              <div class="whoami-img">
+                <img src="pic.jpg" style="height: 25vi; border: 2px solid black;border-radius:25px;"/> 
+              </div>
         </div>
       </div>
     </div>
@@ -81,7 +72,7 @@
             <div class="expertise">
                 <div class="box">
                     <div class="box-logo ">
-                      <p class=" mt-1 text-center">HTML</p> <br><br><br><br>
+                      <p class="text-center">HTML</p> <br><br><br><br>
                     </div>
                 </div>
 
@@ -93,25 +84,25 @@
 
                 <div class="box ">
                   <div class="box-logo">
-                    <p class="mt-1 text-center">Tailwind CSS</p>
+                    <p class=" text-center">Tailwind CSS</p>
                   </div>
               </div>
 
               <div class="box ">
                 <div class="box-logo">
-                  <p class="mt-1 text-center">Java</p>
+                  <p class="text-center">Java</p>
                 </div>
             </div>
 
             <div class="box ">
               <div class="box-logo">
-                <p class="mt-1 text-center">Python</p>
+                <p class="text-center">Python</p>
               </div>
           </div>
 
           <div class="box ">
             <div class="box-logo">
-              <p class="mt-1 text-center">Linux</p>
+              <p class="text-center">Linux</p>
             </div>
         </div>
 
@@ -136,7 +127,7 @@
 
             <div class="box ">
               <div class="box-logo">
-                <p class="mt-1 text-center">Vercel</p>
+                <p class="text-center">Vercel</p>
               </div>
           </div>
 
@@ -202,12 +193,17 @@
     
   </div> 
   <footer class=" ending bg-sky-800">
-    <p class="text-xl text-center"><i class="fa-regular fa-copyright"></i> Desgined by Krish. All Copyrights Reserved</p>
+    <p><i class="fa-regular fa-copyright"></i> Desgined by Krish. </p><p>All Rights Reserved - 2024</p>
+    <div class="linkers">
+      <a href="#about">About</a>
+      <a href="https://medium.com/@krishnshah2003">Blogs</a>
+      <a href="#projects">Projects</a>
+    </div>
     <div class="links">
-      <a href="https://www.linkedin.com/in/krish-shah-cybersecurity/"><i class="fa-brands fa-linkedin-in text-3xl hover:bg-blue-600 hover:text-white"></i></a>
-      <a href="https://github.com/playeron1"><i class="fa-brands fa-github text-3xl hover:bg-black hover:text-white"></i></a> 
-      <a href="https://x.com/krish_shah10"><i class="fa-brands fa-x-twitter text-3xl hover:bg-black hover:text-white"></i></a>
-      <a href="krishnimeshshah@gmail.com"><i class=" email fa-regular fa-envelope text-3xl hover:text-white hover:bg-red-700"></i></a></p>
+      <a href="https://www.linkedin.com/in/krish-shah-cybersecurity/"><i class="fa-brands fa-linkedin-in text-xl hover:bg-blue-600 hover:text-white"></i></a>
+      <a href="https://github.com/playeron1"><i class="fa-brands fa-github text-xl hover:bg-black hover:text-white"></i></a> 
+      <a href="https://x.com/krish_shah10"><i class="fa-brands fa-x-twitter text-xl hover:bg-black hover:text-white"></i></a>
+      <a href="krishnimeshshah@gmail.com"><i class=" email fa-regular fa-envelope text-xl hover:text-white hover:bg-red-700"></i></a></p>
     </div>
   </footer>  
 </body>

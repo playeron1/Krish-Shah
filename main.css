@@ -14,24 +14,23 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 1px solid white;
-    background-color: black;
     align-items: center;
     justify-content: center;
-    width: 97vi;
   }
   .nav-text a{
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid white;
+    border-radius: 0px;
+    margin: 5px;
+    width: 100%;
+    text-align: center;
   }
-  .nav-text a:hover{
-    color: none;
+  .nav-text button{
+    display: none;
   }
   .intro-text img{
     display: none;
-  }
-  .intro{
-    margin-top: 1vh;
   }
   .title{
     margin-left: auto;
@@ -44,22 +43,17 @@
     margin-right: auto;
     display: flex;
   }
-  .whoami-box{
-    font-size: 4.25vi;
-    text-spacing-trim:trim-all;
+  .whoami-box {
+    width: 95%;
+  }
+  .whoami-box p{
+    text-align: left;
+    width: 140%;
+    height: auto;
   }
   .intro-section .resume{
     border: 2px solid black;
     justify-content: center;
-    margin-top: 20px;
-  }
-  .social-links{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
   .profile-name{
     display: flex;
@@ -75,22 +69,11 @@
     justify-content: center;
     align-items: center;
   }
-  .social-links p{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  .box-logo p{
+    font-size: 12vi;
+    display: flex;
+    flex-direction: column;
   }
-.services .box{
-  width: 44vi;
-  text-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  height: 25vi;
-  justify-content: center;
-  align-items: center;
-}
 .volunteering{
   margin-top: -20vi;
 }
@@ -110,14 +93,6 @@
   display: flex;
   justify-content: center;
   margin-top: -30vi;
-}
-.expertise{
-  margin-top: -50px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  font-family: "Fredoka",sans-serif;
 }
 .proj-content{
   display: flex;
@@ -183,10 +158,20 @@ footer{
     font-size:3vb;
     font-family: "Montserrat";
     font-weight: 700;
-    
+    padding: 5px 5px 5px;
+    border-radius: 25px;
+}
+.nav-text a:hover{
+  color: #022C43;
+  background-color: white;
+  transition: ease-in-out 0.2s;
 }
 .nav-text button{
   font-size: 3.35vb;
+}
+.nav-text button:hover{
+  transform: rotate(180deg);
+  transition: ease-in-out 0.2s;
 }
 
 .intro-section{
@@ -302,27 +287,30 @@ footer{
     text-decoration: underline dotted black;
   }
   .whoami{
-    font-size: 3.2vb;
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     width: 85%;
-    padding: 30px 10px 30px;
+    padding: 20px 20px 20px;
     font-family:Inter;
+    border: 0.5px solid white;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px rgb(1, 55, 113);
-    border-color: #022C43;
+    box-shadow: 0px 10px 20px rgb(1, 55, 113);
     animation-name: slide;
       animation-duration: 1s;
       animation-delay: 1s;
+      backdrop-filter: blur(20px);
   }
   .whoami-box{
-    padding: 18px;
     margin-right: 1vb;
     text-align: justify;
-    font-size: auto;
+    width: 75%;
   }
+  .whoami-box p{
+    font-family: Fredoka;
+  }
+
   .expertise{
     font-size: 10px;
     display: flex;
@@ -350,9 +338,10 @@ footer{
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    background-color: rgba(175, 174, 174, 0);
+    /*background-color: rgba(175, 174, 174, 0);*/
     border: 2px solid skyblue;
-    box-shadow: 3px 3px 0px skyblue;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 10px skyblue;
     margin: 1.25vb;
     animation-name: slide;
       animation-duration: 1s;
@@ -501,29 +490,32 @@ footer{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content:space-between;
+  padding: 10px 10px 10px;
   align-items: center;
-  font-family: sans-serif;
-  font-weight: 500;
+  font-family: Montserrat;
+  font-weight: 600;
 }
 footer a{
-  margin:10px;
-}
-footer p{
-  margin-left: 5vi;
-  font-size: 2vi;
+  margin:5px;
 }
 .links{
   display: flex;
-  justify-content: space-between;
 }
 .links i{
   border: 2px solid  black;
-  border-radius: 35px;
-  padding: 8px 8px ;
+  border-radius: 2.5vi;
+  padding: 5px 5px 5px;
   display: flex;
   justify-content: center;
   background-color: white;
   color: #022C43;
-  font-size: 2vi;
-  margin: 1px;
+  font-size: 1.25vi;
+}
+.linkers{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.linkers a{
+  text-decoration: 3px underline;
 }

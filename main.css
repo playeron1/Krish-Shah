@@ -16,18 +16,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: -150px;
   }
   .nav-text a{
     margin-left: auto;
     margin-right: auto;
     border: 2px solid white;
-    border-radius: 0px;
     margin: 5px;
     width: 100%;
     text-align: center;
-  }
-  .nav-text button{
-    display: none;
   }
   .intro-text img{
     display: none;
@@ -35,33 +32,25 @@
   .title{
     margin-left: auto;
     margin-right: auto;
-    font-size: 2vi;
     width: 80%;
   }
-  .whoami{
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-  }
-  .whoami-box {
-    width: 95%;
-  }
-  .whoami-box p{
-    text-align: left;
-    width: 140%;
-    height: auto;
+  .intro-section{
+    margin-bottom: -300px;
   }
   .intro-section .resume{
     border: 2px solid black;
-    justify-content: center;
   }
   .profile-name{
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .profile-name h1{
+    width: 80%;
+  }
   .social-content{
-    display: inline;
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
   .social-links{
@@ -69,30 +58,35 @@
     justify-content: center;
     align-items: center;
   }
+  .intro-text p{
+    width: 135%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .intro-text p.introduce-myself{
+    width: 85%;
+  }
+  .intro-section button.resume{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+  }
   .box-logo p{
-    font-size: 12vi;
     display: flex;
     flex-direction: column;
   }
-.volunteering{
-  margin-top: -20vi;
-}
-.volunteering .content h2{
-  font-size: 10vi;
-}
-.club-logo p{
-  font-size: 4vi;
-}
-.club-logo img{
-  display: none;
-}
+  .club-logo img{
+    display: none;
+  }
 .projects{
   margin-top: -20vi;
 }
 .proj-title h2{
-  display: flex;
+  display: block;
   justify-content: center;
-  margin-top: -30vi;
+  text-align: center;
+  padding: 5px 5px 5px;
+  margin-top: -100px;
 }
 .proj-content{
   display: flex;
@@ -110,17 +104,21 @@
   align-items: center;
   justify-content: center;
 }
-footer .links{
+footer{
+  text-align: center;
+}
+footer p.designed-by{
+  margin-left: auto;
+  margin-right: auto;
+}
+footer p.copyright{
+  margin-left: 80px;
+  text-align: center;
+}
+footer .links i{
   display: none;
 }
-footer{
-  padding: 40px 40px 40px;
 }
-
-
-}
-
-
 /*Desktop */
 
 *{
@@ -140,7 +138,7 @@ footer{
   }
   .navbar{
     margin: 1vb;
-    margin-top: 2.5vh;
+    margin-top: 1.5vh;
     margin-bottom: -8vh;
   }
   .nav-text{
@@ -160,6 +158,8 @@ footer{
     font-weight: 700;
     padding: 5px 5px 5px;
     border-radius: 25px;
+    width: 20vb;
+    text-align: center;
 }
 .nav-text a:hover{
   color: #022C43;
@@ -167,7 +167,8 @@ footer{
   transition: ease-in-out 0.2s;
 }
 .nav-text button{
-  font-size: 3.35vb;
+  font-size: 3.5vb;
+  display: none;
 }
 .nav-text button:hover{
   transform: rotate(180deg);
@@ -180,13 +181,19 @@ footer{
   background-repeat: no-repeat;
   background-size: 100% 75%;
   margin-top: 1px;
+  margin-top: 30vh;
   height: 45rem;
   border-bottom: 25px;
   display: block;
   /*background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);*/
   background-size: cover;
-  animation-name: slide;
+  animation-name: appear;
  animation-duration: 1s;
+}
+@keyframes appear{
+  0%{
+    transform:scaleY(90%);
+  }
 }
 @keyframes slide{
   0%{
@@ -195,16 +202,18 @@ footer{
 }
 .intro-section button{
   margin-left: 43vi;
-  font-weight: 600;
   font-family: Montserrat;
-  font-size: 3vb;
+  font-size: 20px;
+  color: #022C43;
+  background-color: white;
   margin-right: auto;
-  border: 2.5px solid black;
-  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px 10px 10px;
 }
 .intro-section button:hover{
-  background-color: white;
-  color: #022C43;
+  background-color: #022C43;
+  color: white;
   transition: ease-in-out 0.2s;
 }
 .intro-section img{
@@ -220,13 +229,13 @@ footer{
     align-items: center;
     margin-top: 15vh;
     display: flex;
-    font-family: "Fredoka",sans-serif;
-     animation-name: slide;
+     animation-name: appear;
  animation-duration: 1s;
  
 }
 .profile-name h1{
-  font-size:10vb;
+  font-size:50px;
+  font-family:Fredoka ;
   color: white;
 } 
   .social-links{
@@ -235,29 +244,27 @@ footer{
     align-items: center;
 }
 .social-content{
-  display: flex;
-  font-size: auto;
+  display: block;
   justify-content: center;
   align-items: center;
 }
 .social-content a{
-  margin-left: 2vb;
-  font-size: auto;
   /*color: black;*/
   color: white;
+  margin: 3px;
 }
 .social-links p{
-    font-size: 3vi;
-    font-family: "Fredoka",sans-serif;
+    font-size: 28px;
+    font-family: "Montserrat";
+    font-weight: 700;
     color: white;
 }  
 .social-links i{
-  font-size: 2.25vi;
-  margin-top: 0.25vh;
+  font-size: 20px;
+  margin-top:20px ;
   border: 2px solid black;
   padding: 12px 12px 12px;
   border-radius: 35px;
-  margin: 1px;
   background-color: white;
   color: #022C43;
 }
@@ -265,14 +272,14 @@ footer{
   transition: ease-in-out 0.1s;
 }
 .title{
-  margin-top: 10vb;
+  margin-top: 2vb;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .title h2{
   text-align: center;
-  font-size:8vb;
+  font-size:5vb;
   font-family: "Montserrat";
 }
 
@@ -280,7 +287,7 @@ footer{
       text-align: center;
   }
   .intro-text p{
-    font-size: 3.5vb;
+    font-size: 30px;
     font-family: "Montserrat";
   }
   .intro-text a{
@@ -309,8 +316,8 @@ footer{
   }
   .whoami-box p{
     font-family: Fredoka;
+    font-size: 20px;
   }
-
   .expertise{
     font-size: 10px;
     display: flex;
@@ -332,17 +339,18 @@ footer{
       animation-timeline: scroll(x);
   }
   .box{
-    width:12%;
+    width:20vb;
+    height: 10vb;
     font-family: Fredoka;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 5px;
     /*background-color: rgba(175, 174, 174, 0);*/
-    border: 2px solid skyblue;
+    border: 1px solid skyblue;
     backdrop-filter: blur(20px);
-    box-shadow: 0px 0px 10px skyblue;
-    margin: 1.25vb;
+    box-shadow: 0px 0px 1px skyblue;
+    margin: 10px;
     animation-name: slide;
       animation-duration: 1s;
       } 
@@ -360,22 +368,28 @@ footer{
   align-items: center;
 }
 .box-logo p{
-    font-size: 1.75vi;
+    font-size: 20px;
     justify-content: space-evenly; 
     padding: 10px 10px 10px;
     font-weight: 500;
 }
 .services{
-  margin-top: 10vb;
+  margin-top: 10vi;
   
   animation-name: slide;
  animation-duration: 1s;
 }
 .services h2{
-  font-size: 8vb;
+  font-size: 6vb;
   text-align: center;
   font-family: Montserrat;
   margin-bottom: 10vb;
+}
+.services h3{
+  font-size: 3.5vb;
+  font-family: Fredoka;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .volunteering{
   margin-top: 10vi;
@@ -384,7 +398,7 @@ footer{
       animation-delay: 3s;
 }
 .heading{
-  font-size: 8vb;
+  font-size: 6vb;
   font-family: Montserrat;
   text-align: center;
   margin-bottom: 5vi;
@@ -394,15 +408,12 @@ footer{
   font-size: 3vb;
   font-family: Fredoka;
 }
-.club-text{
-  border: 0px solid black;
-}
 .club-logo{
-  border: 2px solid skyblue;
+  border: 1px solid skyblue;
   margin-bottom: 20px;
-  border-radius: 15px;
-  box-shadow: 5px 5px 0px skyblue;
-  padding: 10px 10px 10px;
+  padding: 15px 15px 15px;
+  box-shadow: 0px 0px 50px #022C43;
+  border-radius: 25px;
   display: flex;
   width: 80%;
   align-items: center;
@@ -412,22 +423,16 @@ footer{
       animation-duration: 1s;
       animation-delay: 3s;
 }
-.club-logo:hover{
-  background-color: white;
-  color: #022C43;
-  transition: ease-in-out 0.2s;
-}
 .club-logo p{
   font-family: Inter;
-  margin-top: 20px;
-  margin-right: 5vi;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vb;
+  justify-content: center;
 }
-.club-logo img{
-margin-left: auto;
-margin-right: auto;
-border: 2px solid black;
-}
-
 .projects{
   margin-top: 20vh;
   animation-name: slide;
@@ -441,11 +446,11 @@ border: 2px solid black;
   text-wrap:balance;
   align-items: center;
   justify-content: center;
-  font-size: 5vb;
+  font-size: 3vb;
   margin: 2vb;
 }
 .proj-title h2{
-  font-size: 8vb;
+  font-size: 6vb;
   font-family: Montserrat;
   text-align: center;
 }
@@ -453,13 +458,13 @@ border: 2px solid black;
   border-radius: 15px;
   display: flex;
   background-color: rgba(128, 128, 128, 0);
-  border: 2px solid skyblue;
+  border: 1px solid skyblue;
   box-shadow: 5px 3px skyblue;
   padding: 10px 10px 10px;
   align-items: center;
   font-family: "Fredoka";
   margin: 10px;
-  font-size: 3.5vb;
+  font-size: 2.5vb;
   width: auto;
   animation-name: slide;
       animation-duration: 1s;
@@ -473,9 +478,10 @@ border: 2px solid black;
   font-size: 2.85vb;
   margin-left: 1vh;
   display: flex;
-  border-radius:10px;
+  border-radius:15px;
   width: 160px;
   height: 80px;
+  font-family: Montserrat;
   justify-content:space-evenly;
   align-items:center;
   color: white;

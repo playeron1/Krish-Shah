@@ -120,6 +120,7 @@ flex-wrap: wrap;
 }
 footer{
   text-align: center;
+  height: auto;
 }
 footer p.designed-by{
   margin-left: auto;
@@ -558,7 +559,6 @@ footer{
   align-items: center;
   font-family: Montserrat;
   font-weight: 600;
-  height: 50px;
 }
 footer p{
   font-size: 20px;

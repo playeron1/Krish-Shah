@@ -139,7 +139,6 @@ footer .links i{
 }
 }
 /*Desktop */
-
 *{
   margin: 0;
     scroll-behavior: smooth;
@@ -203,7 +202,19 @@ footer .links i{
   transform: rotate(180deg);
   transition: ease-in-out 0.2s;
 }
-
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale: 0.5;
+    animation:appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
 .intro-section{
   /*color:#022C43;*/
   color: white;
@@ -216,18 +227,6 @@ footer .links i{
   display: block;
   /*background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);*/
   background-size: cover;
-  animation-name: appear;
- animation-duration: 1s;
-}
-@keyframes appear{
-  0%{
-    transform:scaleY(90%);
-  }
-}
-@keyframes slide{
-  0%{
-   transform: translateX(-30%);
-  }
 }
 .intro-section button{
   margin-left: 43vi;
@@ -258,9 +257,6 @@ footer .links i{
     align-items: center;
     margin-top: 15vh;
     display: flex;
-     animation-name: appear;
- animation-duration: 1s;
- 
 }
 .profile-name h1{
   font-size:50px;
@@ -299,6 +295,11 @@ footer .links i{
 .social-links i:hover{
   transition: ease-in-out 0.2s;
 }
+.intro{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
 .title{
   margin-top: 2vb;
   display: flex;
@@ -332,10 +333,7 @@ footer .links i{
     border: 0.5px solid white;
     border-radius: 20px;
     box-shadow: 0px 10px 20px rgb(1, 55, 113);
-    animation-name: slide;
-      animation-duration: 1s;
-      animation-delay: 1s;
-      backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
   }
   .whoami-box{
     margin-right: 1vb;
@@ -349,10 +347,24 @@ footer .links i{
     margin-right: auto;
     margin-left: auto;
   }
+  .services{
+    animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+  }
+  .services h2{
+    animation: appear linear;
+  animation-timeline: view();
+  margin-top: 300px;
+  animation-range: entry 0 cover 40%;
+  }
   .expertise{
     font-size: 10px;
     display: flex;
     justify-content: center;
+    animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
   }
   .expertise{
     display: flex;
@@ -360,6 +372,7 @@ footer .links i{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
     }
   .services p{
     font-size: 5vb;
@@ -367,13 +380,9 @@ footer .links i{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    animation-name: slide;
-      animation-duration: 1s;
-      animation-delay: 3s;
-      animation-timeline: scroll(x);
   }
   .box{
-    width:20vb;
+    width:25vb;
     height: 10vh;
     font-family: Fredoka;
     display: flex;
@@ -386,9 +395,7 @@ footer .links i{
     color:white;
     backdrop-filter: blur(20px);
     margin: 10px;
-    animation-name: slide;
-      animation-duration: 1s;
-      } 
+  } 
 .box:hover{
   background-color: white;
   color: #022C43;
@@ -400,21 +407,28 @@ footer .links i{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .box-logo p{
   align-items: center;
   display: flex;
   justify-content: center;
-    font-size:20px;
+    font-size:25px;
     justify-content: space-evenly; 
     padding: 10px 10px 10px;
     font-weight: 300;
+    animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 .services{
   margin-top: 10vi;
-  
-  animation-name: slide;
- animation-duration: 1s;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 .services h2{
   font-size: 40px;
@@ -440,10 +454,16 @@ footer .links i{
   text-align: center;
   margin-bottom: 5vi;
   font-weight: 700;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 .club-text{
   font-size: 3vb;
   font-family: Fredoka;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 .club-logo{
   border: 5px solid skyblue;
@@ -457,9 +477,10 @@ footer .links i{
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  animation-name: slide;
-      animation-duration: 1s;
-      animation-delay: 3s;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+
 }
 .club-logo p{
   font-family: Inter;
@@ -472,9 +493,9 @@ footer .links i{
 }
 .projects{
   margin-top: 20vh;
-  animation-name: slide;
-      animation-duration: 1s;
-      animation-delay: 3s;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 
 .proj-content{
@@ -537,6 +558,13 @@ footer{
   align-items: center;
   font-family: Montserrat;
   font-weight: 600;
+  height: 50px;
+}
+footer p{
+  font-size: 20px;
+}
+footer p.designed-by{
+  margin-left: 50px;
 }
 footer a{
   margin:5px;

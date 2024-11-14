@@ -112,11 +112,16 @@ footer p.designed-by{
   margin-right: auto;
 }
 footer p.copyright{
-  margin-left: 80px;
+  margin-left: 40px;
   text-align: center;
 }
 footer .links i{
-  display: none;
+  font-size: 25px;
+  margin-left: 15px;
+  margin-top: 5px;
+  padding: 10px 10px 10px;
+  border-radius: 15px;
+  border: 2px solid white;
 }
 }
 /*Desktop */

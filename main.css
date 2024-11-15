@@ -17,7 +17,6 @@
     align-items: center;
     justify-content: center;
     margin-bottom: -150px;
-    color: black;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -26,9 +25,7 @@
   .nav-text a{
     margin-left: auto;
     margin-right: auto;
-    background-color: #022c436e;
     margin: 5px;
-    color: black;
     width: 100%;
     text-align: center;
   }
@@ -43,9 +40,6 @@
   .intro-section{
     margin-bottom: -300px;
     margin-top: 200px;
-  }
-  .intro-section .resume{
-    border: 2px solid black;
   }
   .profile-name{
     display: flex;
@@ -79,8 +73,15 @@
     display: flex;
   }
   .whoami-box {
-    margin-left: 20px;
+    margin: 2px;
   }
+.whoami ul{
+  width: 180%;
+  margin-left:-140px;
+  word-spacing: 0px;
+  text-align: left;
+  margin-bottom: -200px;
+}
   .expertise{
 display: flex;
 flex-wrap: wrap;
@@ -132,7 +133,7 @@ footer p.copyright{
 }
 footer .links i{
   font-size: 25px;
-  margin-left: 15px;
+  margin-left: 25px;
   margin-top: 5px;
   padding: 10px 10px 10px;
   border-radius: 15px;
@@ -325,28 +326,20 @@ footer .links i{
   }
   .whoami{
     display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
     padding: 20px 20px 20px;
     font-family:Inter;
-    border: 0.5px solid white;
-    border-radius: 20px;
-    box-shadow: 0px 10px 20px rgb(1, 55, 113);
-    backdrop-filter: blur(20px);
   }
   .whoami-box{
-    margin-right: 1vb;
-    text-align: justify;
-    width: 75%;
+    margin-left: 150px;
+    margin-top: 50px;
+    text-align: left;
+    word-spacing: 10px;
+    letter-spacing: 1px;
   }
-  .whoami-box p{
+  .whoami-box ul{
     font-family: Fredoka;
-    font-size: 20px;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
+    font-size: 22px;
+    margin-top: 25px;
   }
   .services{
     animation: appear linear;
@@ -356,7 +349,7 @@ footer .links i{
   .services h2{
     animation: appear linear;
   animation-timeline: view();
-  margin-top: 300px;
+  margin-top: 150px;
   animation-range: entry 0 cover 40%;
   }
   .expertise{
@@ -450,7 +443,7 @@ footer .links i{
       animation-delay: 3s;
 }
 .heading{
-  font-size: 6vb;
+  font-size: 40px;
   font-family: Montserrat;
   text-align: center;
   margin-bottom: 5vi;
@@ -464,7 +457,7 @@ footer .links i{
   font-family: Fredoka;
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 30%;
 }
 .club-logo{
   border: 5px solid skyblue;
@@ -480,7 +473,7 @@ footer .links i{
   margin-right: auto;
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 30%;
 
 }
 .club-logo p{
@@ -494,9 +487,6 @@ footer .links i{
 }
 .projects{
   margin-top: 20vh;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
 }
 
 .proj-content{
@@ -525,8 +515,6 @@ footer .links i{
   margin: 10px;
   font-size: 2.5vb;
   width: auto;
-  animation-name: slide;
-      animation-duration: 1s;
 }
 .prj-logo:hover{
   background-color: white;

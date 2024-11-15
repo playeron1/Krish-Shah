@@ -150,8 +150,8 @@ footer .links i{
   }
   body{
    /* background-image: url(12818.jpg);*/
+   background-image: url(ggfyjy8.jpg);
  color: white;
- background-image: url(ggfyjy8.jpg);
  background-size: cover;
  background-repeat: no-repeat;
  
@@ -277,20 +277,18 @@ footer .links i{
 }
 .social-content a{
   /*color: black;*/
-  color: white;
   margin: 3px;
 }
 .social-links p{
     font-size: 28px;
     font-family: "Montserrat";
     font-weight: 500;
-    color: white;
 }  
 .social-links i{
   font-size: 20px;
   margin-top:20px ;
   padding: 10px 10px 10px;
-  border-radius: 35px;
+  border-radius: 15px;
   background-color: white;
   color: #022C43;
 }
@@ -463,7 +461,7 @@ footer .links i{
   border: 5px solid skyblue;
   margin-bottom: 20px;
   padding: 15px 15px 15px;
-  box-shadow: -10px 10px 10px #022C43;
+  box-shadow: 0px 5px 5px white;
   border-radius: 25px;
   display: flex;
   width: 80%;

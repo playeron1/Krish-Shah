@@ -29,6 +29,11 @@
     width: 100%;
     text-align: center;
   }
+  .nav-text button{
+    margin-right: 35px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
   .intro-text img{
     display: none;
   }
@@ -99,6 +104,9 @@
 .projects{
   margin-top: -20vi;
 }
+.prj-logo button{
+  width: 200px;
+}
 .proj-title h2{
   display: block;
   justify-content: center;
@@ -126,22 +134,6 @@ footer{
   text-align: center;
   height: auto;
 }
-footer p.designed-by{
-  margin-left: auto;
-  margin-right: auto;
-}
-footer p.copyright{
-  margin-left: 40px;
-  text-align: center;
-}
-footer .links i{
-  font-size: 25px;
-  margin-left: 25px;
-  margin-top: 5px;
-  padding: 10px 10px 10px;
-  border-radius: 15px;
-  border: 2px solid white;
-}
 }
 /*Desktop */
 *{
@@ -152,11 +144,10 @@ footer .links i{
     scrollbar-width:auto;
   }
   body{
-   /* background-image: url(12818.jpg);*/
-
- background-size: cover;
+    background-image: url(ggfyjy8.jpg);
+    background-size: cover;
  background-repeat: no-repeat;
- 
+    
   }
   .navbar{
     margin: 1vb;
@@ -177,11 +168,7 @@ footer .links i{
     justify-content:space-evenly;
     font-family: "Inter";
   }
-  #mobile-button{
-    display: none;
-  }
 .nav-text a {
-    /*color:#022C43;*/
     color: white;
     font-size:3vb;
     border: 2px solid white;
@@ -197,10 +184,6 @@ footer .links i{
   color: #022C43;
   background-color: white;
   transition: ease-in-out 0.2s;
-}
-.nav-text button{
-  font-size: 3.5vb;
-  display: none;
 }
 .nav-text button:hover{
   transform: rotate(180deg);
@@ -220,7 +203,6 @@ footer .links i{
   }
 }
 .intro-section{
-  /*color:#022C43;*/
   background-repeat: no-repeat;
   background-size: 100% 75%;
   margin-top: 1px;
@@ -228,7 +210,6 @@ footer .links i{
   height: 45rem;
   border-bottom: 25px;
   display: block;
-  /*background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);*/
   background-size: cover;
 }
 .intro-section button{
@@ -383,18 +364,12 @@ footer .links i{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    /*background-color: rgba(175, 174, 174, 0);*/
-    /* border: 1px solid slategray; */
     color:white;
+    border-color: white;
     backdrop-filter: blur(20px);
     margin: 10px;
+    cursor:default;
   } 
-.box:hover{
-  background-color: #022C43;
-  color: white;
-  transition: ease-in-out 0.2s;
-  cursor:default;
-}
 .box-logo{
   display: flex;
   flex-wrap: wrap;
@@ -446,7 +421,6 @@ footer .links i{
   font-family: Montserrat;
   text-align: center;
   margin-bottom: 100px;
-  font-weight: 700;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0 cover 40%;
@@ -459,10 +433,10 @@ footer .links i{
   animation-range: entry 0 cover 30%;
 }
 .club-logo{
-  border: 2px solid slategray;
+  border: 5px solid skyblue;
   margin-bottom: 20px;
   padding: 15px 15px 15px;
-  box-shadow: 0px 5px 0px slategray;
+  box-shadow: 0px 5px 0px skyblue;
   border-radius: 15px;
   display: flex;
   width: 80%;
@@ -505,7 +479,7 @@ footer .links i{
 .prj-logo{
   border-radius: 15px;
   display: flex;
-  background-color: rgba(128, 128, 128, 0);
+background-color: white;
   /* border: 1px solid slategrey; */
   /* box-shadow: 5px 3px skyblue; */
   padding: 10px 10px 10px;
@@ -514,12 +488,13 @@ footer .links i{
   margin: 10px;
   font-size: 2.5vb;
   width: auto;
+  color: #022C43;
 }
 .prj-logo button{
-  font-size: 2.85vb;
-  margin-left: 1vh;
+  font-size: 20px;
+  margin-left: 1vb;
   display: flex;
-  border-radius:25px;
+  border-radius:15px;
   width: 160px;
   height: 80px;
   font-family: Montserrat;
@@ -532,35 +507,11 @@ footer{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content:space-evenly;
   padding: 10px 10px 10px;
   align-items: center;
   font-family: Montserrat;
-  font-weight: 600;
 }
 footer p{
   font-size: 20px;
-}
-footer p.designed-by{
-  margin-left: 50px;
-}
-footer a{
-  margin:5px;
-}
-.links{
-  display: flex;
-}
-.links i{
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-size: 1.25vi;
-}
-.linkers{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.linkers a{
-  text-decoration: 3px underline;
 }

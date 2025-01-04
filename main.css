@@ -1,512 +1,529 @@
-@tailwind base;
+ @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-@media screen and (max-width:700px)
-{
-  .intro-section h1{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 100px;
-  }
-  .nav-text{
-    display: flex;
+@media(max-width: 600px) {
+  nav ul.menuList {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #022c43;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: -150px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 100;
   }
-  .nav-text a{
-    margin-left: auto;
-    margin-right: auto;
-    margin: 5px;
+  
+  nav ul.menuList.active {
+    max-height: 300px;
+  }
+  
+  nav ul li {
+    padding: 20px;
     width: 100%;
     text-align: center;
   }
-  .nav-text button{
-    margin-right: 35px;
-    margin-top: 20px;
-    margin-bottom: 50px;
+     section {
+      padding: 10px 0;
+    }
+    .whoami-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 10px;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 200px;
+    }
+  
+    .whoami-box img {
+      display: none;
+    }
+  
+    /* Fix expertise grid */
+    .expertise {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      width: 100%;
+    }
+  .services{
+    margin-top: 500px;
   }
-  .intro-text img{
-    display: none;
+  .profession{
+    margin-top: 1100px;
+    margin-bottom: 600px;
   }
-  .title{
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    .box {
+      width: 100%;
+      height: 80px;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .clubs{
+      margin-top: 1600px;
+      height: 500px;
+    }
+    .text{
+      height: auto;
+    }
+  
+    .timeline_event {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .timeline_event_date{
+      width: 200px;
+    }
+    .timeline_event_icon img{
+      margin-left: 100px;
+      width: 200px;
+      height: auto;
+    }
+  
+    /* Fix clubs section */
+    .club1 {
+      display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 1000px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    .club1 img{
+      display: none;
+      font-size: 6px;
+    }
+  
+    /* Fix projects layout */
+    .prj-text {
+     margin-bottom: 600px;
+    }
+    .description img{
+      display: none;
+    }
+    footer{
+      margin-top: 900px;
+    }
   }
-  .intro-section{
-    margin-bottom: -300px;
-    margin-top: 200px;
-  }
-  .profile-name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .profile-name h1{
-    width: 80%;
-  }
-  .social-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .social-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .intro-text{
-    
-  }
-  .intro-text p{
-    width: 135%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .intro-text p.introduce-myself{
-    width: 85%;
-    margin-bottom: -50px;
-  }
-  .intro-section button.resume{
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-  }
-.whoami ul{
-  width: 180%;
-  margin-left:-140px;
-  word-spacing: 0px;
-  margin-bottom: -200px;
+
+  /* Fix content containers */
+  
+/* -------------------------------------------------------------------------------------------------------------------*/
+/*Desktop CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-.whoami li{
-  margin: 10px;
-  text-align: center;
-  border: 0.1px solid white;
-  border-radius: 10px;
-  border-width: 20px 10px;
-  background-color: white;
-  color: #022C43;
+
+button {
+  transition: all 0.2s ease;
 }
-  .box-logo p{
-    display: flex;
-    flex-direction: column;
-  }
-  .club-logo img{
-    display: none;
-  }
-.projects{
-  margin-top: -20px;
+
+button:hover {
+  transform: translateY(-2px);
 }
-.proj-title h2{
-  display: block;
-  justify-content: center;
-  text-align: center;
-  padding: 5px 5px 5px;
-  margin-top: -100px;
-}
-.proj-content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.prj-logo p {
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-}
-footer{
-  text-align: center;
+
+/* Added proper image handling */
+img {
+  max-width: 100%;
   height: auto;
 }
+
+/* Fixed background image path and added fallback color */
+header {
+  background: url(img/wallpaper1.jpg) no-repeat center center/cover;
+  background-color: #022c43;
+  min-height: 100vh;
+  position: relative;
 }
-/*Desktop */
-*{
-  margin: 0;
-    scroll-behavior: smooth;
-    border: border-box;
-    scrollbar-color: #022c43 white;
-    scrollbar-width:auto;
-  }
-  body{
-    background-image: url(ggfyjy8.jpg);
-    background-size: cover;
- background-repeat: no-repeat;
-    
-  }
-  .navbar{
-    margin: 1vb;
-    margin-top: 10px;
-    margin-bottom: -8vh;
-    width: 60%;
-    border-radius: 25px;
-    position: -ms-page;
-    margin-right: auto;
-    margin-left: auto;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-  }
-  .nav-text{
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    font-family: "Inter";
-  }
-.nav-text a {
-    color: white;
-    font-size:3vb;
-    border: 2px solid white;
-    margin: 5px;
-    font-family: "Montserrat";
-    font-weight: 700;
-    padding: 5px 5px 5px;
-    border-radius: 10px;
-    width: 20vb;
-    text-align: center;
+
+/* Fixed navigation styles */
+nav {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  display: flex;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #022c43;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
-.nav-text a:hover{
-  color: #022C43;
-  background-color: white;
-  transition: ease-in-out 0.2s;
+/* Added proper height units */
+.intro,
+.clubs,
+.projects,
+.contactme {
+  min-height: 100vh;
+  padding: 2rem 0;
 }
-.nav-text button:hover{
-  transform: rotate(180deg);
-  transition: ease-in-out 0.2s;
-}
-@keyframes appear{
-  from{
-    opacity: 0;
-    scale: 0.5;
-    animation:appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
-  to{
-    opacity: 1;
-    scale: 1;
-  }
-}
-.intro-section{
-  background-repeat: no-repeat;
-  background-size: 100% 75%;
-  margin-top: 1px;
-  margin-top: 30vh;
-  height: 45rem;
-  border-bottom: 25px;
-  display: block;
-  background-size: cover;
-}
-.intro-section button{
-  margin-left: 43vi;
-  font-family: Montserrat;
-  font-size: 20px;
-  color: #022C43;
-  background-color: white;
-  margin-right: auto;
-  border-radius: 10px;
-  padding: 10px 10px 10px;
-  box-shadow: 0px 10px 10px #022C43;
-}
-.intro-section button:hover{
-  background-color: #022C43;
+
+
+.logo{
   color: white;
-  transition: ease-in-out 0.2s;
+  font-size: 40px;
 }
-.intro-section img{
+nav ul{
+  display: flex;
+  gap: 30px;
+}
+nav ul li{
+  list-style-type: none;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+.menu-icon{
+  display: block;
+}
+.menu-icon i{
+  color: white;
+  font-size: 30px;
+}
+.profile-name{
+  margin-top: 20vh;
+}
+.profile-name h1{
+  text-align: center;
+  font-size: 100px;
+  font-family: Montserrat;
+  color:white;
+}
+.availibility{
+  font-size:30px;
+  font-family: Inter;
+  font-style: italic;
+  text-align: center;
+}
+.intro-section img {
   height: 20vb;
   display: block;
   margin-left: auto;
   margin-right: auto;
   filter: drop-shadow(0px 0px 18px #022c43);
 }
-.profile-name{
-    
-    justify-content: center;
-    align-items: center;
-    margin-top: 15vh;
-    display: flex;
-}
-.profile-name h1{
-  font-size:50px;
-  font-family:Montserrat;
-  color: white;
-} 
-  .social-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social-content{
-  display: block;
+.social-links ul{
+  display: flex;
+  font-size: 30px;
+  margin-top: 30px;
+  gap: 50px;
   justify-content: center;
-  align-items: center;
 }
-.social-content a{
-  /*color: black;*/
-  margin: 3px;
-}
-.social-links p{
-    font-size: 28px;
-    font-family: "Montserrat";
-    font-weight: 500;
-}  
 .social-links i{
-  font-size: 20px;
-  margin-top:20px ;
-  padding: 10px 10px 10px;
-  border-radius: 15px;
-  background-color: white;
-  color: #022C43;
+  padding: 10px;
+  border-radius: 50%;
 }
-.social-links i:hover{
+.social-links i:hover {
   transition: ease-in-out 0.2s;
 }
-.intro{
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+.intro {
+  height: 100vh;
 }
-.title{
-  margin-top: 2vb;
+.intro-text {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Montserrat";
+}
+.introduce-myself{
+  padding: 50px;
+}
+.whoami-box {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+}
+.whoami-box img{
+  margin-left: 100px;
+  position: relative;
+}
+.whoami-box ul {
+  font-family: Fredoka;
+  font-size: 30px;
+}
+.services{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.services h1{
+  font-size: 50px;
+  font-family: Montserrat;
+  margin-top: 10vh;
+}
+.services h2{
+  font-size: 35px;
+  text-align: center;
+  font-family: Montserrat;
+}
+.expertise {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding:5px ;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services p {
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
-.title h2{
-  text-align: center;
-  font-size:5vb;
-  font-family: "Montserrat";
+.box {
+  width: 180px;
+  height: 10vh;
+  font-family:Fredoka;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  box-shadow: 0px 5px 8px gray;
 }
-
-  .intro-text{
-      text-align: center;
-  }
-  .intro-text p{
-    font-size: 30px;
-    font-family: "Montserrat";
-  }
-  .intro-text a{
-    text-decoration: underline dotted black;
-  }
-  .whoami{
-    display: flex;
-    padding: 20px 20px 20px;
-    font-family:Inter;
-  }
-  .whoami-box{
-    margin-left: 150px;
-    margin-top: 50px;
-    text-align: left;
-    word-spacing: 10px;
-    letter-spacing: 1px;
-  }
-  .whoami-box ul{
-    font-family: Fredoka;
-    font-size: 22px;
-    margin-top: 25px;
-  }
-  .services{
-    animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0;
-  }
-  .services h2{
-    animation: appear linear;
-  animation-timeline: view();
-  margin-top: 150px;
-  animation-range: entry 0 cover 40%;
-  }
-  .expertise{
-    font-size: 10px;
-    display: flex;
-    justify-content: center;
-    animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
-  }
-  .expertise{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    }
-  .services p{
-    font-size: 5vb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .box{
-    width:25vb;
-    height: 10vh;
-    font-family: Fredoka;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    color:white;
-    border-color: white;
-    backdrop-filter: blur(20px);
-    margin: 10px;
-    cursor:default;
-  } 
-.box-logo{
+.box-logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
 }
-.box-logo p{
+.box-logo p {
   align-items: center;
   display: flex;
   justify-content: center;
-    font-size:25px;
-    justify-content: space-evenly; 
-    padding: 10px 10px 10px;
-    font-weight: 300;
-    animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  font-size: 25px;
+  justify-content: space-evenly;
+  padding: 10px 10px 10px;
 }
-.services{
-  margin-top: 10vi;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
-}
-.services h2{
-  font-size: 40px;
-  text-align: center;
-  font-family: Montserrat;
-  margin-bottom: 10vb;
-}
-.services h3{
-  font-size: 3.5vb;
-  font-family: Fredoka;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.volunteering{
-  margin-top: 10vi;
-  animation-name: slide;
-      animation-duration: 1s;
-      animation-delay: 3s;
-}
-.heading{
-  font-size: 40px;
-  font-family: Montserrat;
-  text-align: center;
-  margin-bottom: 100px;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
-}
-.club-text{
-  font-size: 3vb;
-  font-family: Fredoka;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 30%;
-}
-.club-logo{
-  border: 5px solid skyblue;
-  margin-bottom: 20px;
-  padding: 15px 15px 15px;
-  box-shadow: 0px 5px 0px skyblue;
-  border-radius: 15px;
-  display: flex;
-  width: 80%;
-  backdrop-filter: blur(20px);
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 30%;
-
-}
-.club-logo p{
-  font-family: Inter;
+.profession{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
+  height: auto;
 }
-.projects{
-  margin-top: 20vh;
+.profession h2{
+  font-family: Montserrat;
+  margin-top: 8vh;
+  font-size: 35px;
 }
-
-.proj-content{
+.skills{
+  border: 2px solid chartreuse;
   display: flex;
-  flex-wrap:wrap;
-  text-wrap:balance;
-  align-items: center;
-  justify-content: center;
-  font-size: 3vb;
-  margin: 2vb;
+  gap: 20px;
+  font-weight: 700;
+  font-style: italic;
 }
-.proj-title h2{
-  font-size: 6vb;
+.profession{
+  height: 150vh;
+}
+.timeline {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 80%;
+  margin-top: 50px;
+  font-family: Inter;
+}
+.timeline_event{
+  display: flex;
+  height: auto;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 20px;
+  background-color: white;
+  margin: 10px;
+}
+.timeline_event_icon{
+  display: flex;
+  align-items: center;
+}
+.timeline_event_icon img{
+  position: absolute;
+  left: 50px;
+  border-radius: 20px;
+  background-color: white;
+}
+.timeline_event_date{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+  padding: 15px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  justify-content: center;
+}
+.timeline_event_content{
+  padding: 10px;
+}
+.timeline_event_title h1{
+  text-align: center;
+  font-weight: 700;
+  font-family: Montserrat;
+  font-size: 30px;
+}.timeline_event_description{
+  margin-top: 10px;
+}
+.timeline_event_description button{
+  border: 2px solid black;
+  margin-top: 20px;
+  padding: 5px;
+  font-family: Inter;
+  font-size: 15px;
+  border-radius: 15px;
+}
+.clubs{
+  height: auto;
+}
+.heading{
+  font-size: 35px;
   font-family: Montserrat;
   text-align: center;
-}
-.prj-logo{
-  border-radius: 15px;
   display: flex;
-background-color: white;
-  /* border: 1px solid slategrey; */
-  /* box-shadow: 5px 3px skyblue; */
-  padding: 10px 10px 10px;
   align-items: center;
-  font-family: "Fredoka";
-  margin: 10px;
-  font-size: 2.5vb;
-  width: auto;
-  color: #022C43;
+  justify-content: center;
 }
-.prj-logo button{
-  font-size: 20px;
-  margin-left: 1vb;
+.heading h1{
+  margin-top: 20vh;
+}
+.club1{
+  border: 0.2px solid gray;
   display: flex;
-  border-radius:15px;
-  width: 160px;
-  height: 80px;
+  margin-top: 10vh;
+  height: auto;
+  width: 80%;
+  border-radius: 28px;
+  box-shadow:  0px 0px 15px gray;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 30px;
+}
+.logo img{
+  clip-path: circle();
+  height: max-content;
+  width: 150px;
+}
+.text{
+  font-size: 20px;
+  font-family: Inter;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.text h1{
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
   font-family: Montserrat;
-  justify-content:space-evenly;
-  align-items:center;
+}
+.durations{
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+}
+.highlight{
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  font-family: Inter;
+}
+.text ul{
+  list-style-type:circle;
+}
+.projects{
+  height: 220vh;
+}
+.proj-title {
+  font-size: 35px;
+  font-family: Montserrat;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.proj-title h2{
+  margin-top: 100px;
+}
+.prj-text{
+  border: 1px solid gray;
+  width: 80%;
+  margin: 50px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px grey;
+}
+.Amazon-clone{
+  font-size: 40px;
+  text-align: center;
+  font-family:Inter;
+}
+.description{
+  display: flex;
+  align-items: center;
+}
+.made-with{
+  font-size: 25px;
+  font-family: "Montserrat";
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.made-with i{
+  font-size: 30px;
+}
+.prj-text button {
+  font-size: 20px;
+  font-family: Montserrat;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px;
+}
+.prj-text button:hover{
+  background-color: black;
   color: white;
-
+  transition: linear 0.1s;
 }
-footer{
+.description{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content:space-evenly;
-  padding: 10px 10px 10px;
-  align-items: center;
-  font-family: Montserrat;
 }
-footer p{
+.description p{
   font-size: 20px;
 }
+.prj-text img{
+  height: auto;
+  width: 180px;
+  clip-path: circle();
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-family: Montserrat;
+  align-items: center;
+  height: auto;
+  font-size: 16px; 
+} 

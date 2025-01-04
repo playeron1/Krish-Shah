@@ -9,210 +9,371 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon"  type="avataaars" href="avataaars.png">  
 </head>
 <body>
   <header>
-    <div class="navbar">
-      <div class="nav-text" id="nav-text">
-          <a href="#about"><i class="fa-regular fa-circle-user"></i> About</b></a>
-          <a href="#skills"><i class="fa-solid fa-gears"></i> Skill</b></a>
-          <a href="#media"><i class="fa-solid fa-award"></i> Media</a>
-          <a href="#projects"><i class="fa-solid fa-code-fork"></i> Project</b></a>
-          <a href="https://medium.com/@krishnshah2003"><i class="fa-brands fa-medium"></i> Blogs</a>
-          <a href="https://drive.google.com/file/d/1C7aAAUQ8K8aCYQQI6pM61tglcdLFzI6Q/view" target="_main"><i class="resume fa-solid fa-arrow-down"></i> Resume</a>
+    <<nav>
+      <div class="logo">
+          <h1 class="text-white">K</h1>
       </div>
-</div>  
-<div class="intro-section" id="intro-section">
-<div class="profile-name" id="home">
-  <h1>Hello!</h1>
-</div>
-<br><br>
-<!--<img src="avataaars.png"/><br><br><br>-->
-<div class="social-links">
- <div class="social-content">
-  <p class="text-white"> I'm available @  <br> </p>
-  <a href="https://www.linkedin.com/in/krish-shah-cybersecurity/"><i class=" linked fa-brands fa-linkedin   hover:bg-blue-700 hover:text-white"></i></a>
-  <a href="https://github.com/playeron1"><i class="fa-brands fa-github   hover:bg-black hover:text-white"></i></i></a> 
-  <a href="https://x.com/krish_shah10"><i class ="fa-brands fa-x-twitter   hover:bg-black hover:text-white"></i></a>
-  <a href="mailto:krishnimeshshah@gmail.com"><i class =  "fa-regular fa-envelope   hover:bg-red-600 hover:text-white"></i></a>
- </div>
-</div>  
-<button class="resume" style="margin-top: 5vh;font-weight: 500;"><a href="https://drive.google.com/file/d/1C7aAAUQ8K8aCYQQI6pM61tglcdLFzI6Q/view"><i class="fa-duotone fa-solid fa-circle-down"></i> Download CV</a></button>
-</div>
-
-  </header> 
-  <div class="intro text-white">
-      <div class="title">
-      </div>
-      <div class="intro-text">
-        <br><p class="introduce-myself" class="text-white">Let Me <span class="text-white underline font-semibold">Introduce</span> Myself</p><br>
-        <div class="whoami">
-          <div class="whoami-img">
-            <img src="pic.jpg" style="height: 25vi;border-radius: 15px;margin-left: 150px;margin-top: 15px;clip-path: circle();"/> 
-          </div>
-               <div class="whoami-box text-white">
-                <b class="text-white text-3xl text-center">I am</b><br> 
-                 <ul class="text-white dark:text-white" >
-                  <li>  📍 From Bangalore
-                 <li>  🏫 Pursuing Bachelors in Computer Science from GITAM Bangalore</a> 
-                 <li> ⚡  Passionated in Cybersecurity
-                <li> 🌱  Currently looking forward to upskill and make contributions
-                <li> 🏀 Interested in playing basketball & 🏸 playing badminton
-                <li> 🎹 Interested in listening music and playing piano
-               </ul>
-               </div>
-        </div>
-      </div>
+      <ul class="menuList" id="menuList">
+          <li><a class="hover:text-gray-300 transition-colors" href="#about">About</a></li>
+          <li><a class="hover:text-gray-300 transition-colors" href="#skills">Skills</a></li>
+          <li><a class="hover:text-gray-300 transition-colors" href="#experience">Experience</a></li>
+          <li><a class="hover:text-gray-300 transition-colors" href="#projects">Projects</a></li>
+          <li><a class="hover:text-gray-300 transition-colors" href="#resume">Resume</a></li>
+      </ul>
+      <button class="menu-icon md:hidden" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars text-white text-2xl"></i>
+      </button>
+  </nav>
+    <div class="profile-name">
+      <h1>Hello!</h1>
+    </div> 
+    <div class="intro-section" id="intro-section">
+      <p class="availibility text-white text-center">I'm available on</p>
     </div>
-        <div class="services" id="skills">
-           <h2 class="text-white dark:text-white" ><span class="text-whitefont-semibold underline">Programming Languages</span> & Tools </h2>
-           <h3></h3>
-            <div class="expertise text-white dark:text-white" >
-                <div class="box border-2 ">
-                    <div class="box-logo ">
-                      <p class="text-center text-white">HTML</p> <br><br><br><br>
-                    </div>
-                </div>
-
-                <div class="box border-2">
-                    <div class="box-logo">
-                      <p class="text-center text-white" >CSS</p>
-                    </div>
-                </div>
-
-                <div class="box border-2">
-                  <div class="box-logo">
-                    <p class=" text-center text-white " >Tailwind CSS</p>
-                  </div>
-              </div>
-
-              <div class="box border-2">
-                <div class="box-logo">
-                  <p class=" text-center text-white " >Java Script</p>
-                </div>
-            </div>
-
-            <div class="box border-2">
-              <div class="box-logo">
-                <p class=" text-center text-white " >Node JS</p>
-              </div>
-          </div>
-          <div class="box border-2">
-            <div class="box-logo">
-              <p class=" text-center text-white" >My SQL</p>
-            </div>
-        </div>
-
-              <div class="box border-2 ">
-                <div class="box-logo">
-                  <p class="text-center text-white" >Java</p>
-                </div>
-            </div>
-
-            <div class="box border-2">
-              <div class="box-logo">
-                <p class="text-center text-white" >Python</p>
-              </div>
-          </div>
-          
-          <div class="box border-2">
-            <div class="box-logo">
-              <p class="text-center text-white" >Virtualization</p>
-            </div>
-        </div> 
-          <div class="box border-2">
-            <div class="box-logo">
-              <p class="text-center text-white" >Linux</p>
-            </div>
-        </div> 
-              <div class="box border-2">
-                <div class="box-logo">
-                  <p class="text-center text-white" >Kali Linux</p>
-                </div>
-            </div>
-
-            <div class="box border-2">
-              <div class="box-logo">
-                <p class="text-center text-white" >Ubuntu</p>
-              </div>
-          </div>
-
-          <div class="box border-2">
-            <div class="box-logo">
-              <p class="text-center text-white" >Windows</p>
-            </div>
-        </div>
-
-              <div class="box border-2">
-                <div class="box-logo">
-                  <p class="text-center text-white" >Git & Github</p>
-                </div>
-               
-            </div>
-
-            <div class="box border-2">
-              <div class="box-logo">
-                <p class="text-center text-white" >Vercel</p>
-              </div>
-          </div>
-
-            </div>
-        </div>
+    <div class="social-links">
+      <ul>
+        <li>
+          <p>
+            <a href="https://www.linkedin.com/in/krish-shah-cybersecurity/">
+              <i class="fa-brands fa-linkedin-in text-white hover:bg-blue-600 hover:text-white"></i>
+            </a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="https://github.com/playeron1">
+              <i class="fa-brands fa-github text-white hover:bg-black"></i>
+            </a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="https://x.com/krish_shah10">
+              <i class ="fa-brands fa-x-twitter text-white hover:bg-black"></i>
+            </a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="mailto:krishnimeshshah@gmail.com">
+              <i class =  "fa-regular fa-envelope text-white hover:bg-red-600 hover:text-white"></i>
+            </a>
+          </p>
+        </li>
+      </ul>
     </div>
+  </header>
+ 
+  <section class="intro bg-slate-200" id="about">
+      <div class="intro-text" >
+        <p class="introduce-myself" class="text-black">Let Me <span class="text-slate-500">Introduce</span> Myself
+        </p>
+      </div>
+        <div class="whoami-box">
+          <img src="/img/pic.jpg" style="height: 40vh; clip-path: circle();
+ "> 
+            <ul>
+              <li>I am</li>
+              <li>  📍 From Bangalore
+              <li>  🏫 Pursuing Bachelors in Computer Science from GITAM Bangalore</a> 
+              <li> ⚡  Passionated in Cybersecurity
+              <li> 🌱  Currently looking forward to upskill and make contributions
+              <li> 🏀 Interested in playing basketball & 🏸 playing badminton
+              <li> 🎹 Interested in listening music and playing piano
+            </ul>
+          </div>
+          </section>
         
-    <div class="volunteering" id="media">
-      <div class="content">
-      <div class="heading">
-        <h2 class="text-white mt-24">Communities & <span class="underline">Volunteering Experience</span></h2>
-      </div>
-      <div class="club-text">
-        <div class="club-logo" >
-          <img src="kalakrithi-blr.png" style="border-radius: 25px;"/>
-          <p class="kalakriti" style="margin-left: 8%;"><b class="text-white">Kalakrithi Club</b><br><span class="text-white">Jan 2022 - Aug 2023</span> <br><br><span class="text-white  font-semibold underline">Highlights of work</span><br><span class="text-white"> -   Proactively taken part in the cultural activities hosted by the club <br> - Made solo performances and group performances</span></p>
-          </div>
-    </div>
-  </div>
-    <div class="club-text">
-      <div class="club-logo">
-        <img src="cysec-logo.jpeg" style="border-radius: 25px;height: 20%;"/>
-        <p class="cysec" style="margin-left: 20%;"><b class="text-white">CYSEC Club</b><br><span class="text-white">Jan 2022 - Aug 2024 </span><br><br><span class="text-white  font-semibold underline">Highlights of work</span><br><span class="text-white">- Proactively taken part in the club activities and workshops <br> - Promoted to core member of the content team of the club</span></p>
-      </div>
-  </div>
-    </div>
-        <div class="projects mt-22" id="projects">
-            <div class="proj-title">
-                <h2 class="mb-20 text-white">Undertaken <span class="text-white underline">Projects</span></h2>
-            </div>
-            <div class="proj-content text-white font-medium">
-              <div class="prj-text">
-                <div class="prj-logo border-2 shadow-md shadow-black">
-                  <p class="text-center cursor-pointer">Amazon Clone</p>
-                  <button class="bg-black"><i class="fa-brands fa-github text-3xl"></i><a href="https://github.com/playeron1/Amazon-Clone">Github</a></button>
-                </div>
-                <div class="text">
+        <section class="services bg-slate-300" id="skills">
+            <h1 class="text-slate-900">
+              Skill Sets
+            </h1>
+            <h2 class="text-slate-900">
+              Programming Languages 
+            </h2>
+             <div class="expertise" >
+                 <div class="box  rounded-md">
+                     <div class="box-logo ">
+                       <p class="text-center text-slate-900">HTML</p>
+                     </div>
+                 </div>
+ 
+                 <div class="box rounded-md">
+                     <div class="box-logo">
+                       <p class="text-center text-slate-900" >CSS</p>
+                     </div>
+                 </div>
+ 
+                 <div class="box rounded-md">
+                   <div class="box-logo">
+                     <p class=" text-center text-slate-900 " >Tailwind CSS</p>
+                   </div>
+               </div>
+ 
+               <div class="box rounded-md">
+                 <div class="box-logo">
+                   <p class=" text-center text-slate-900 " >JS</p>
+                 </div>
+             </div>
+ 
+             <div class="box rounded-md">
+               <div class="box-logo">
+                 <p class=" text-center text-slate-900 " >Node JS</p>
+               </div>
+           </div>
+           <div class="box rounded-md">
+             <div class="box-logo">
+               <p class=" text-center text-slate-900" >My SQL</p>
+             </div>
+         </div>
+ 
+               <div class="box rounded-md">
+                 <div class="box-logo ">
+                   <p class="text-center text-slate-900" >Java</p>
+                 </div>
+             </div>
+ 
+             <div class="box rounded-md">
+               <div class="box-logo">
+                 <p class="text-center text-slate-900" >Python</p>
+               </div>
+           </div>
+           
+           <div class="box rounded-md">
+             <div class="box-logo">
+               <p class="text-center text-slate-900" >Virtualization</p>
+             </div>
+         </div> 
+           <div class="box rounded-md">
+             <div class="box-logo">
+               <p class="text-center text-slate-900" >Linux</p>
+             </div>
+         </div> 
+               <div class="box rounded-md">
+                 <div class="box-logo">
+                   <p class="text-center text-slate-900" >Kali Linux</p>
+                 </div>
+             </div>
+ 
+             <div class="box rounded-md">
+               <div class="box-logo">
+                 <p class="text-center text-slate-900" >Ubuntu</p>
+               </div>
+           </div>
+ 
+           <div class="box rounded-md">
+             <div class="box-logo">
+               <p class="text-center text-slate-900" >Windows</p>
+             </div>
+         </div>
+ 
+               <div class="box rounded-md">
+                 <div class="box-logo">
+                   <p class="text-center text-slate-900" >Git & Github</p>
+                 </div>
+             </div>
+ 
+             <div class="box rounded-md">
+               <div class="box-logo">
+                 <p class="text-center text-slate-900" >Vercel</p>
+               </div>
+           </div>
+             </div>
 
+             
+        </section>
+        <section class="profession bg-slate-400">
+          <h2 class="text-center">Professional Experience</h2>
+          <div class="timeline">
+            <div class="timeline_event">
+              <div class="timeline_event_icon">
+                <img src="img/PANW-4618d203.png" alt="" style="width: 88px;height: auto;padding: 12px;">
+              </div>
+              <div class="timeline_event_date bg-orange-400">
+                Sept 2023 - Nov 2023
+              </div>
+              <div class="timeline_event_content">
+                <div class="timeline_event_title">
+                  <h1>Palo Alto Networks - Cybersecurity Virtual Internship</h1>
                 </div>
+                <div class="timeline_event_description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta nobis, architecto laborum labore excepturi ullam a nihil. Fugiat aliquam amet quo dicta dolorem perspiciatis tempora laudantium dolores cumque delectus?</p>
+                  <button>View certificate</button>
+                </div>
+              </div>
             </div>
-          <div class="prj-text">
-            <div class="prj-logo  border-2 shadow-md shadow-black">
-              <p class="text-center cursor-pointer">Cyber Security Home Lab</p>
-              <button class="bg-black"><i class="fa-brands fa-github text-3xl"></i><a>Github</a></button>
+            <div class="timeline_event">
+              <div class="timeline_event_icon">
+                <img src="img/gitam-logo.png" alt="" style="height: auto;width: 88px;">
+              </div>
+              <div class="timeline_event_date bg-green-800 text-white">
+                Dec 2023 - March 2023
+              </div>
+              <div class="timeline_event_content">
+                <div class="timeline_event_title">
+                  <h1>Python Developer</h1>
+                </div>
+                <div class="timeline_event_description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta nobis, architecto laborum labore excepturi ullam a nihil. Fugiat aliquam amet quo dicta dolorem perspiciatis tempora laudantium dolores cumque delectus?</p>
+                  <button>View certificate</button>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="prj-text">
-          <div class="prj-logo  border-2 shadow-md shadow-black">
-            <p class=" text-center cursor-pointer">Malware Analysis using Data Science</p>
-            <button class="bg-black"><i class="fa-brands fa-github text-3xl"></i><a>Github</a></button>
+            <div class="timeline_event">
+              <div class="timeline_event_icon">
+                <img src="img/Google__G__logo.svg.png" alt="" style="height: auto;width: 88px;">
+              </div>
+              <div class="timeline_event_date bg-slate-300">
+                Jan 2024 - March 2024
+              </div>
+              <div class="timeline_event_content">
+                <div class="timeline_event_title">
+                  <h1>Google - Android Development Virtual Internship</h1>
+                </div>
+                <div class="timeline_event_description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta nobis, architecto laborum labore excepturi ullam a nihil. Fugiat aliquam amet quo dicta dolorem perspiciatis tempora laudantium dolores cumque delectus?</p>
+                  <button>View certificate</button>
+                </div>
+              </div>
+            </div>
+            <div class="timeline_event">
+              <div class="timeline_event_icon">
+                <img src="img/Allied_Market_Research.png" alt="" style="height: auto;width: 88px;">
+              </div>
+              <div class="timeline_event_date bg-neutral-300">
+                May 2024 - July 2024
+              </div>
+              <div class="timeline_event_content">
+                <div class="timeline_event_title">
+                  <h1>Summer Research Intern</h1>
+                </div>
+                <div class="timeline_event_description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta nobis, architecto laborum labore excepturi ullam a nihil. Fugiat aliquam amet quo dicta dolorem perspiciatis tempora laudantium dolores cumque delectus?</p>
+                  <button>View certificate</button>
+                </div>
+              </div>
+            </div>
           </div>
-      </div>
-            </div>
+        </section>
+    <section class="clubs bg-slate-300">
+        <div class="heading">
+          <h1>Volunteering Experience</h1>
         </div>
-  <footer class=" mt-20 ending bg-sky-700">
-    <p class="designed-by text-white" ><i class="fa-regular fa-copyright text-white" ></i> Desgined by Krish. </p><p class="copyright text-white" >All Rights Reserved - 2024</p>
+        <div class="club1 bg-white">
+
+          <div class="logo" >
+            <img src="img/images.jpeg"/>
+          </div>
+
+          <div class="text">
+            <h1 class="kalakriti">Kalakrithi Club</h1>
+              <p class="durations">Jan 2022 - Aug 2023</p>
+              <p class="highlight">Highlights of work</p>
+              <ul>
+                <li>Proactively taken part in the cultural activities hosted by the club</li>
+                <li>Made solo performances and group performances</li>
+              </ul>
+          </div>
+
+        </div>
+        <div class="club1 bg-white">
+          <div class="logo" >
+            <img src="img/cysec-logo.jpeg">
+          </div>
+          <div class="text">
+            <h1 class="kalakriti">CYSEC</h1>
+              <p class="durations">Jan 2022 - Aug 2024 </p>
+              <p class="highlight">Highlights of work</p>
+              <ul>
+                <li>Proactively taken part in the club activities and workshops</li>
+                <li>Promoted to core member of the content team of the club</li>
+              </ul>
+        </div>
+        </div>
+    </section>
+        <div class="projects bg-slate-200" id="projects">
+            <div class="proj-title">
+                <h2>My&nbsp;<span>Projects</span></h2>
+            </div>
+
+              <div class="prj-text bg-slate-100">
+                  <p class="Amazon-clone">Amazon Clone</p>
+                  <p class="made-with">Made With: 
+                    <i class="fa-brands fa-html5 text-blue-700"></i> 
+                    <i class="fa-brands fa-css3-alt text-orange-600"></i>
+                    <i class="fa-brands fa-square-js text-yellow-500"></i>
+                  </p>
+                  <div class="description">
+                    <p>
+                      By replicating the structure and design you can develop a strong understanding of webpage layouts, semantic HTML elements, and styling techniques. Start by breaking down the site into smaller components, such as the navigation bar, product listings, and footer.
+                    </p>
+
+                    <img src="img/amazon-logo-amazon-icon-free-free-vector.jpg" alt="">
+                  </div>
+                  <button>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/playeron1/Amazon-Clone"> Github</a>
+                  </button>
+                  <button><i class="fa-solid fa-laptop"></i> Demo</button>
+              </div>
+
+
+          <div class="prj-text bg-slate-100">
+              <p class="Amazon-clone">Cyber Security Home Lab
+              </p>
+              
+              <p class="made-with">Made With: <img src="img/vmware.png" style="height: 38px;width: auto;"><img src="img/Virtualbox_logo.png" style="height: 38px;width: auto;;"> <img src="img/kali-linux2962.jpg" style="height: 38px;width:auto;"> <i class="fa-brands fa-ubuntu text-orange-600"></i>
+              </p>
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum architecto laborum ducimus inventore ad molestiae qui amet, assumenda eius natus a quis perspiciatis animi suscipit rerum facere consequuntur consectetur?</p>
+
+
+                <img src="img/homelab.jpg">
+            </div>
+              <button><i class="fa-brands fa-github text-xl"></i> Github</button>
+        </div>
+
+
+        <div class="prj-text bg-slate-100">
+            <p class="Amazon-clone">Malware Analysis using Data Science</p>
+            
+            <p class="made-with">Made With: 
+              <i class="fa-brands fa-python text-blue-500"></i> <img src="img/numpy.png" style="height: 38px;width: auto;">
+            </p>
+            <div class="description">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi eos quaerat fuga veniam aperiam ratione rerum repellat, ea incidunt tenetur est ducimus unde quisquam atque soluta ipsam quo quidem!</p>
+              <img src="img/malware-analy.png" alt="">
+            </div>
+            <button>
+              <i class="fa-brands fa-github text-xl"></i> Github
+            </button>
+        </div>
+     </div>
+  <footer class="ending bg-slate-500">
+    <p class="designed-by text-white font-medium" ><i class="fa-regular fa-copyright text-white font-medium" ></i> Desgined by Krish. 
+    </p>
+    <p class="copyright text-white font-medium" >All Rights Reserved - 2024
+    </p>
   </footer>  
+  <script>
+    let menuList = document.getElementById("menuList")
+    menuList.style.maxHeight = "0px";
+    function toggleMenu()
+    {
+      if( menuList.style.maxHeight == "0px")
+    {
+      menuList.style.maxHeight = "900px";
+    }
+    else{
+      menuList.style.maxHeight = "0px";
+    }
+    }
+  </script>
 </body>
 </html>

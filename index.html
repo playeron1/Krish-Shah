@@ -17,14 +17,14 @@
   <header>
     <<nav>
       <div class="logo">
-          <h1 class="text-white">K</h1>
+          <h1 class="text-white">Krish Shah</h1>
       </div>
       <ul class="menuList" id="menuList">
           <li><a class="hover:text-gray-300 transition-colors" href="#about">About</a></li>
           <li><a class="hover:text-gray-300 transition-colors" href="#skills">Skills</a></li>
           <li><a class="hover:text-gray-300 transition-colors" href="#experience">Experience</a></li>
           <li><a class="hover:text-gray-300 transition-colors" href="#projects">Projects</a></li>
-          <li><a class="hover:text-gray-300 transition-colors" href="#resume">Resume</a></li>
+          <li><a class="hover:text-gray-300 transition-colors" href="https://resume-bice-mu.vercel.app/" target="_blank">Resume</a></li>
       </ul>
       <button class="menu-icon md:hidden" onclick="toggleMenu()">
           <i class="fa-solid fa-bars text-white text-2xl"></i>
@@ -33,7 +33,7 @@
     <div class="profile-name">
       <h1>Hello!</h1>
     </div> 
-    <div class="intro-section" id="intro-section">
+    <div class="intro-section">
       <p class="availibility text-white text-center">I'm available on</p>
     </div>
     <div class="social-links">
@@ -188,7 +188,7 @@
 
              
         </section>
-        <section class="profession bg-slate-400">
+        <section class="profession bg-slate-400" id="experience">
           <h2 class="text-center">Professional Experience</h2>
           <div class="timeline">
             <div class="timeline_event">
@@ -201,10 +201,6 @@
               <div class="timeline_event_content">
                 <div class="timeline_event_title">
                   <h1>Palo Alto Networks - Cybersecurity Virtual Internship</h1>
-                </div>
-                <div class="timeline_event_description">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta nobis, architecto laborum labore excepturi ullam a nihil. Fugiat aliquam amet quo dicta dolorem perspiciatis tempora laudantium dolores cumque delectus?</p>
-                  <button>View certificate</button>
                 </div>
               </div>
             </div>
@@ -219,10 +215,6 @@
                 <div class="timeline_event_title">
                   <h1>Python Developer</h1>
                 </div>
-                <div class="timeline_event_description">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta nobis, architecto laborum labore excepturi ullam a nihil. Fugiat aliquam amet quo dicta dolorem perspiciatis tempora laudantium dolores cumque delectus?</p>
-                  <button>View certificate</button>
-                </div>
               </div>
             </div>
             <div class="timeline_event">
@@ -236,10 +228,6 @@
                 <div class="timeline_event_title">
                   <h1>Google - Android Development Virtual Internship</h1>
                 </div>
-                <div class="timeline_event_description">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta nobis, architecto laborum labore excepturi ullam a nihil. Fugiat aliquam amet quo dicta dolorem perspiciatis tempora laudantium dolores cumque delectus?</p>
-                  <button>View certificate</button>
-                </div>
               </div>
             </div>
             <div class="timeline_event">
@@ -252,10 +240,6 @@
               <div class="timeline_event_content">
                 <div class="timeline_event_title">
                   <h1>Summer Research Intern</h1>
-                </div>
-                <div class="timeline_event_description">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta nobis, architecto laborum labore excepturi ullam a nihil. Fugiat aliquam amet quo dicta dolorem perspiciatis tempora laudantium dolores cumque delectus?</p>
-                  <button>View certificate</button>
                 </div>
               </div>
             </div>
@@ -320,7 +304,9 @@
                     <i class="fa-brands fa-github"></i>
                     <a href="https://github.com/playeron1/Amazon-Clone"> Github</a>
                   </button>
-                  <button><i class="fa-solid fa-laptop"></i> Demo</button>
+                  <button>
+                    <i class="fa-solid fa-laptop"></i> Demo
+                  </button>
               </div>
 
 
@@ -331,7 +317,7 @@
               <p class="made-with">Made With: <img src="img/vmware.png" style="height: 38px;width: auto;"><img src="img/Virtualbox_logo.png" style="height: 38px;width: auto;;"> <img src="img/kali-linux2962.jpg" style="height: 38px;width:auto;"> <i class="fa-brands fa-ubuntu text-orange-600"></i>
               </p>
               <div class="description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum architecto laborum ducimus inventore ad molestiae qui amet, assumenda eius natus a quis perspiciatis animi suscipit rerum facere consequuntur consectetur?</p>
+                <p>Designed and implemented a virtualized home lab environment to simulate real-world cybersecurity scenarios and enhance hands-on skills in network security, vulnerability assessment, and threat detection.                </p>
 
 
                 <img src="img/homelab.jpg">
@@ -347,7 +333,7 @@
               <i class="fa-brands fa-python text-blue-500"></i> <img src="img/numpy.png" style="height: 38px;width: auto;">
             </p>
             <div class="description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi eos quaerat fuga veniam aperiam ratione rerum repellat, ea incidunt tenetur est ducimus unde quisquam atque soluta ipsam quo quidem!</p>
+              <p>Developed a data-driven approach to detect and classify malware using machine learning techniques, enhancing cybersecurity threat intelligence and response capabilities. Collected and analyzed malware samples and benign files from public repositories like VirusTotal and Kaggle. Extracted static and dynamic features, including opcode sequences, API calls, and network traffic patterns.</p>
               <img src="img/malware-analy.png" alt="">
             </div>
             <button>
@@ -356,9 +342,7 @@
         </div>
      </div>
   <footer class="ending bg-slate-500">
-    <p class="designed-by text-white font-medium" ><i class="fa-regular fa-copyright text-white font-medium" ></i> Desgined by Krish. 
-    </p>
-    <p class="copyright text-white font-medium" >All Rights Reserved - 2024
+    <p class="designed-by text-white font-medium" ><i class="fa-regular fa-copyright text-white font-medium" ></i> Desgined by Krish. <br><br> All Rights Reserved - 2024
     </p>
   </footer>  
   <script>

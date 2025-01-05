@@ -47,27 +47,23 @@
     /* Fix expertise grid */
     .expertise {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit);
       width: 100%;
+      height: 30px;
     }
-  .services{
-    margin-top: 500px;
-  }
   .profession{
-    margin-top: 1100px;
+    margin-top: 700px;
     margin-bottom: 600px;
   }
     .box {
       width: 100%;
-      height: 80px;
-      
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(auto-fit);
       align-items: center;
       justify-content: center;
     }
     .clubs{
-      margin-top: 1600px;
+      margin-top: 900px;
       height: 500px;
     }
     .text{
@@ -112,7 +108,7 @@
       display: none;
     }
     footer{
-      margin-top: 900px;
+      margin-top: 1000px;
     }
   }
 
@@ -210,7 +206,7 @@ nav ul li a{
   text-align: center;
 }
 .intro-section img {
-  height: 20vb;
+  height: 20vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -231,7 +227,7 @@ nav ul li a{
   transition: ease-in-out 0.2s;
 }
 .intro {
-  height: 100vh;
+  height: auto;
 }
 .intro-text {
   text-align: center;
@@ -255,16 +251,14 @@ nav ul li a{
   font-size: 30px;
 }
 .services{
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
 }
 .services h1{
   font-size: 50px;
   font-family: Montserrat;
-  margin-top: 10vh;
 }
 .services h2{
   font-size: 35px;
@@ -324,8 +318,8 @@ nav ul li a{
 }
 .profession h2{
   font-family: Montserrat;
-  margin-top: 8vh;
-  font-size: 35px;
+  font-size: 55px;
+  margin-top: 10px;
 }
 .skills{
   border: 2px solid chartreuse;
@@ -335,7 +329,7 @@ nav ul li a{
   font-style: italic;
 }
 .profession{
-  height: 150vh;
+  height: auto;
 }
 .timeline {
   display: flex;
@@ -350,7 +344,8 @@ nav ul li a{
   box-shadow: 0px 0px 10px gray;
   border-radius: 20px;
   background-color: white;
-  margin: 10px;
+  margin: 30px;
+  text-align: center;
 }
 .timeline_event_icon{
   display: flex;
@@ -375,12 +370,16 @@ nav ul li a{
 .timeline_event_content{
   padding: 10px;
 }
+.timeline_event_title{
+  text-align: center;
+}
 .timeline_event_title h1{
   text-align: center;
   font-weight: 700;
   font-family: Montserrat;
   font-size: 30px;
-}.timeline_event_description{
+}
+.timeline_event_description{
   margin-top: 10px;
 }
 .timeline_event_description button{
@@ -395,15 +394,12 @@ nav ul li a{
   height: auto;
 }
 .heading{
-  font-size: 35px;
+  font-size: 55px;
   font-family: Montserrat;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.heading h1{
-  margin-top: 20vh;
 }
 .club1{
   border: 0.2px solid gray;
@@ -452,7 +448,7 @@ nav ul li a{
   list-style-type:circle;
 }
 .projects{
-  height: 220vh;
+  height: auto;
 }
 .proj-title {
   font-size: 35px;
@@ -463,7 +459,7 @@ nav ul li a{
   justify-content: center;
 }
 .proj-title h2{
-  margin-top: 100px;
+ font-size: 55px;
 }
 .prj-text{
   border: 1px solid gray;
@@ -527,3 +523,7 @@ footer {
   height: auto;
   font-size: 16px; 
 } 
+footer p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

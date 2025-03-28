@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "cal-heatmap": "^4.2.4"
+    "cal-heatmap": "^4.2.4",
+    "github-calendar": "^2.3.4"
   }
 }

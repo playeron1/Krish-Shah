@@ -1,526 +1,714 @@
  @tailwind base;
-@tailwind components;
-@tailwind utilities;
+ @tailwind components;
+ @tailwind utilities;
 
-@media(max-width: 600px) {
-  nav ul.menuList {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background-color: #022c43;
-    flex-direction: column;
-    gap: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    z-index: 100;
-  }
-  
-  nav ul.menuList.active {
-    max-height: 300px;
-  }
-  
-  nav ul li {
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-  }
-     section {
-      padding: 10px 0;
-    }
-    .whoami-box {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      padding: 10px;
-      width: 100%;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 200px;
-    }
-  
-    .whoami-box img {
-      display: none;
-    }
-  
-    /* Fix expertise grid */
-    .expertise {
-      display: grid;
-      grid-template-columns: repeat(auto-fit);
-      width: 100%;
-      height: 30px;
-    }
-  .profession{
-    margin-top: 700px;
-    margin-bottom: 600px;
-  }
-    .box {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(auto-fit);
-      align-items: center;
-      justify-content: center;
-    }
-    .clubs{
-      margin-top: 900px;
-      height: 500px;
-    }
-    .text{
-      height: auto;
-    }
-  
-    .timeline_event {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .timeline_event_date{
-      width: 200px;
-    }
-    .timeline_event_icon img{
-      margin-left: 100px;
-      width: 200px;
-      height: auto;
-    }
-  
-    /* Fix clubs section */
-    .club1 {
-      display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 1000px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
-    .club1 img{
-      display: none;
-      font-size: 6px;
-    }
-  
-    /* Fix projects layout */
-    .prj-text {
+ @media(max-width: 768px) {
+   nav ul.menuList {
+     position: fixed;
+     top: 90px;
+     left: 0;
+     right: 0;
+     background-color: rgb(0, 0, 0);
+     flex-direction: column;
+     gap: 0;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.3s ease-in-out;
+     z-index: 100;
+     border: 1px solid white;
+   }
+
+   nav ul.menuList.active {
+     max-height: 500px;
+   }
+
+   nav ul li {
+     padding: 15px;
+     width: 100%;
+     text-align: center;
+   }
+
+   section {
+     padding: 10px 0;
+   }
+
+   .whoami-box {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 32px;
+     padding: 10px;
+     width: 100%;
+     align-items: center;
+     text-align: center;
+     margin-bottom: 200px;
+   }
+
+   .whoami-box img {
+     display: none;
+   }
+
+   /* Fix expertise grid */
+   .expertise {
+     display: grid;
+     grid-template-columns: repeat(auto-fit);
+     width: 100%;
+   }
+
+   .box {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(auto-fit);
+     align-items: center;
+     justify-content: center;
+   }
+
+   .clubs {
+     height: auto;
+   }
+
+   .text {
+     height: auto;
+   }
+
+   .timeline_event {
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+   .timeline_event_date {
+     width: 200px;
+   }
+
+   .timeline_event_icon img {
+     margin-left: 100px;
+     width: 200px;
+     height: auto;
+   }
+
+   /* Fix clubs section */
+   .club1 {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     padding: 2rem;
+     margin: 1rem auto;
+     max-width: 1000px;
+     background: white;
+     border-radius: 8px;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+   }
+
+   .club1 img {
+     display: none;
+     font-size: 6px;
+   }
+
+   /* Fix projects layout */
+   .prj-text {
      margin-bottom: 600px;
-    }
-    .description img{
-      display: none;
-    }
-  }
+   }
 
-  /* Fix content containers */
-  
-/* -------------------------------------------------------------------------------------------------------------------*/
-/*Desktop CSS*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+   .description img {
+     display: none;
+   }
+ }
+
+ /* Fix content containers */
+
+ /* -------------------------------------------------------------------------------------------------------------------*/
+ /*Desktop CSS*/
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   scrollbar-width: thin;
+   scrollbar-color: #022c43;
+ }
+
+ /* Fixed background image path and added fallback color */
+ header {
+   background: url(img/wallpaper1.jpg) no-repeat center center/cover;
+   background-color: #022c43;
+   width: 100%;
+   height: 100vh;
+   position: relative;
+ }
+
+ body {
+   background-color: black;
+ }
+
+ /* Fixed navigation styles */
+ nav {
+   font-family: sans-serif;
+   display: flex;
+   flex: 1;
+   padding: 10px 20px;
+   align-items: center;
+   justify-content: space-around;
+   background-color: black;
+   z-index: 1000;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+ }
+
+ .logo {
+   color: white;
+   font-size: 40px;
+   background: linear-gradient(90deg, #ff105f, #ffad06);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ nav ul {
+   display: flex;
+   gap: 60px;
+   list-style-type: none;
+   flex-direction: row;
+   align-items: center;
+ }
+
+ nav ul li {
+   color: white;
+   font-size: 18px;
+ }
+
+ nav ul li a {
+   padding: 5px;
+   border-radius: 5px;
+ }
+
+ nav ul li a:hover {
+   background-color: rgb(127, 114, 114);
+   transition: ease-in-out 0.1s;
+ }
+
+ nav ul li a.resume {
+   border: 1px solid gray;
+   padding: 10px 10px;
+   border-radius: 5px;
+   background-color: transparent;
+   color: white;
+ }
+
+ nav ul li a.resume:hover {
+   background-color: rgb(44, 44, 44);
+   color: white;
+   transition: linear 0.1s;
+ }
+
+ nav .menu-icon {
+   display: hidden;
+ }
+
+ .menu-icon i {
+   color: white;
+   font-size: 30px;
+ }
+
+ .profile-name {
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   margin-top: 20vh;
+ }
+
+ .profile-name h1 {
+   font-size: 50px;
+   font-family: Inter;
+   color: white;
+   background: linear-gradient(90deg, #ff105f, #ffad06);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ .profile-name h2 {
+   color: white;
+   font-size: 40px;
+   font-style: italic;
+   margin-top: 2vh;
+ }
+
+ .profile-name .socialMedia {
+   color: white;
+   font-size: 48px;
+   display: flex;
+   justify-content: left;
+   padding: 20px;
+   gap: 20px;
+ }
+
+ .availibility {
+   font-size: 30px;
+   font-family: Inter;
+   font-style: italic;
+   text-align: center;
+ }
+
+ .intro {
+   background: black;
+   color: white;
+ }
+
+ .intro-text h1 {
+   font-size: 50px;
+   font-family: Inter;
+   text-align: center;
+   padding: 20px;
+   background: linear-gradient(90deg, #ff105f, #ffad06);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ .whoami-box {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: center;
+   width: 80%;
+ }
+
+ .whoami-box p {
+   font-family: sans-serif;
+   font-size: 20px;
+   text-align: left;
+ }
+
+ .services h2 {
+   font-size: 48px;
+   font-family: Inter;
+   text-align: center;
+   background: linear-gradient(90deg, #ff105f, #ffad06);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ .services h3 {
+   font-family: sans-serif;
+   text-align: center;
+   font-size: 16px;
+ }
+
+ .services {
+   color: white;
+   background: black;
+   margin-top: 5vh;
+ }
+
+ .expertise {
+   margin-top: 15vh;
+ }
+
+ .card {
+   font-size: 16px;
+   cursor: pointer;
+   text-align: center;
+   color: white;
+ }
+
+ .cardText {
+   display: flex;
+   gap: 10px;
+   flex-direction: row;
+   font-family: sans-serif;
+   text-align: center;
+   width: 70%;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+ }
+
+ .cardText p:hover {
+   transform: translate(1);
+   background-color: white;
+   color: black;
+   transition: all 0.2s;
+ }
+
+ .cardText p {
+   border: 0.5px solid rgb(190, 190, 190);
+   border-radius: 5px;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 5px;
+   height: 40px;
+   width: auto;
+ }
+
+ .cardText img,
+ .cardText i {
+   margin-right: 10px;
+   text-align: center;
+   justify-content: center;
+ }
+
+ .profession {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: black;
+   background-color: black;
+   margin-top: 10vh;
+ }
+
+ .profession h1 {
+   color: white;
+   text-align: center;
+   margin-top: 10vh;
+   display: flex;
+   width: 90%;
+   justify-content: center;
+ }
+
+ .profession h2 {
+   font-family: sans-serif;
+   font-size: 48px;
+   color: white;
+   text-align: center;
+   background: linear-gradient(90deg, #ff105f, #ffad06);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ /* Timeline container */
+ .timeline {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   /* Add spacing between events */
+   padding: 20px;
+   margin: 0 auto;
+   margin-top: 10vh;
+   max-width: 800px;
+   /* Center and limit the width */
+   position: relative;
+   border-left: 4px solid white;
+   /* Vertical line for the timeline */
+ }
+
+ /* Timeline event */
+ .timeline_event {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   position: relative;
+   padding: 15px;
+   background: #f9f9f9;
+   /* Light background for events */
+   border-radius: 10px;
+   margin-left: 20px;
+   /* Offset to align with the timeline */
+ }
+
+ /* Timeline event icon */
+ .timeline_event_icon {
+   flex-shrink: 0;
+   width: 68px;
+   height: 68px;
+   padding: 10px;
+   border-radius: 50%;
+   background: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border: 2px solid #022c43;
+ }
+
+ .timeline_event_icon img {
+   clip-path: circle();
+ }
+
+ /* Timeline event date */
+ .timeline_event_date {
+   font-size: 14px;
+   color: #555;
+   font-weight: bold;
+   margin-top: 5px;
+ }
+
+ /* Timeline event content */
+ .timeline_event_content {
+   flex: 1;
+ }
+
+ .timeline_event_title h1 {
+   font-size: 18px;
+   color: #022c43;
+   margin: 0;
+ }
+
+ /* Add a dot on the timeline */
+ .timeline_event::before {
+   content: "";
+   position: absolute;
+   left: -12px;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 12px;
+   height: 12px;
+   background: #022c43;
+   border-radius: 50%;
+   border: 2px solid white;
+ }
+
+ /* Hover effect for events */
+ .timeline_event:hover {
+   background: #e6f7ff;
+   /* Light blue background on hover */
+   transform: translateX(5px);
+   /* Slight movement */
+   transition: all 0.3s ease;
+ }
+
+ /* Clubs Section */
+ .clubs {
+   background-color: black;
+   color: white;
+   font-family: sans-serif;
+   padding: 40px 20px;
+   text-align: center;
+ }
+
+ .heading h1 {
+   font-size: 38px;
+   background: linear-gradient(90deg, #ff105f, #ffad06);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ /* Club Container */
+ .club-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+ }
+
+ /* Club Card */
+ .club-card {
+   background-color: #ffffff;
+   color: #022c43;
+   border-radius: 15px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   width: 300px;
+   padding: 20px;
+   text-align: center;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .club-card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+ }
+
+ /* Club Logo */
+ .club-logo img {
+   clip-path: circle();
+   width: 100px;
+   height: 100px;
+   margin-bottom: 15px;
+ }
+
+ /* Club Details */
+ .club-name {
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 10px;
+ }
+
+ .club-duration {
+   font-size: 16px;
+   font-weight: 300;
+   margin-bottom: 10px;
+ }
+
+ .club-highlight {
+   font-size: 18px;
+   font-weight: 600;
+   margin-bottom: 10px;
+ }
+
+ .club-list {
+   list-style-type: disc;
+   text-align: left;
+   margin: 0 auto;
+   padding: 0;
+   max-width: 250px;
+ }
+
+ .club-list li {
+   font-size: 14px;
+   margin-bottom: 5px;
+ }
+.certification{
+  margin-top: 10vh;
+  padding: 25px;
 }
-
-button {
-  transition: all 0.2s ease;
+.certificates{
+  text-align: center;
 }
-
-button:hover {
-  transform: translateY(-2px);
-}
-
-/* Added proper image handling */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Fixed background image path and added fallback color */
-header {
-  background: url(img/wallpaper1.jpg) no-repeat center center/cover;
-  background-color: #022c43;
-  min-height: 100vh;
-  position: relative;
-}
-
-/* Fixed navigation styles */
-nav {
-  font-family: "Montserrat", sans-serif;
-  width: 100%;
-  display: flex;
-  padding: 1rem 2rem;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #022c43;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-}
-/* Added proper height units */
-.intro,
-.clubs,
-.projects,
-.contactme {
-  min-height: 100vh;
-  padding: 2rem 0;
-}
-
-
-.logo{
+.certificates h2{
+  font-size: 16px;
   color: white;
-  font-size: 40px;
 }
-nav ul{
-  display: flex;
-  gap: 30px;
+.certificates h1{
+  font-size: 48px;
+  font-family: sans-serif;
+  background: linear-gradient(90deg, #ff105f, #ffad06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-nav ul li{
-  list-style-type: none;
-}
-nav ul li a{
-  text-decoration: none;
+
+.certificate-card{
   color: white;
-}
-.menu-icon{
-  display: block;
-}
-.menu-icon i{
-  color: white;
-  font-size: 30px;
-}
-.profile-name{
-  margin-top: 20vh;
-}
-.profile-name h1{
-  text-align: center;
-  font-size: 100px;
-  font-family: Montserrat;
-  color:white;
-}
-.availibility{
-  font-size:30px;
-  font-family: Inter;
-  font-style: italic;
-  text-align: center;
-}
-.intro-section img {
-  height: 20vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  filter: drop-shadow(0px 0px 18px #022c43);
-}
-.social-links ul{
-  display: flex;
-  font-size: 30px;
-  margin-top: 30px;
-  gap: 50px;
-  justify-content: center;
-}
-.social-links i{
-  padding: 10px;
-  border-radius: 50%;
-}
-.social-links i:hover {
-  transition: ease-in-out 0.2s;
-}
-.intro {
-  height: auto;
-}
-.intro-text {
-  text-align: center;
-  font-size: 50px;
-  font-family: "Montserrat";
-}
-.introduce-myself{
-  padding: 50px;
-}
-.whoami-box {
-  display: flex;
-  gap: 120px;
-  align-items: center;
-}
-.whoami-box img{
-  margin-left: 100px;
-  position: relative;
-}
-.whoami-box ul {
-  font-family: Fredoka;
-  font-size: 30px;
-}
-.services{
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.services h1{
-  font-size: 50px;
-  font-family: Montserrat;
-}
-.services h2{
-  font-size: 35px;
-  text-align: center;
-  font-family: Montserrat;
-}
-.expertise {
-  font-size: 10px;
-  display: flex;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  padding:5px ;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.services p {
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.box {
-  width: 180px;
-  height: 10vh;
-  font-family:Fredoka;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
-  cursor: pointer;
-  background-color: whitesmoke;
-  box-shadow: 0px 5px 8px gray;
-}
-.box-logo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.box-logo p {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-  justify-content: space-evenly;
-  padding: 10px 10px 10px;
-}
-.profession{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: auto;
-}
-.profession h2{
-  font-family: Montserrat;
-  font-size: 55px;
-  margin-top: 10px;
-}
-.skills{
-  border: 2px solid chartreuse;
-  display: flex;
-  gap: 20px;
-  font-weight: 700;
-  font-style: italic;
-}
-.profession{
-  height: auto;
-}
-.timeline {
-  display: flex;
-  flex-direction: column-reverse;
-  width: 80%;
-  margin-top: 50px;
-  font-family: Inter;
-}
-.timeline_event{
-  display: flex;
-  height: auto;
-  box-shadow: 0px 0px 10px gray;
-  border-radius: 20px;
-  background-color: white;
-  margin: 30px;
-  text-align: center;
-}
-.timeline_event_icon{
-  display: flex;
-  align-items: center;
-}
-.timeline_event_icon img{
-  position: absolute;
-  left: 50px;
-  border-radius: 20px;
-  background-color: white;
-}
-.timeline_event_date{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 25%;
+  border: 1px solid white;
   padding: 15px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  justify-content: center;
-}
-.timeline_event_content{
-  padding: 10px;
-}
-.timeline_event_title{
-  text-align: center;
-}
-.timeline_event_title h1{
-  text-align: center;
-  font-weight: 700;
-  font-family: Montserrat;
-  font-size: 30px;
-}
-.timeline_event_description{
-  margin-top: 10px;
-}
-.timeline_event_description button{
-  border: 2px solid black;
-  margin-top: 20px;
-  padding: 5px;
-  font-family: Inter;
-  font-size: 15px;
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 10vh;
   border-radius: 15px;
 }
-.clubs{
-  height: auto;
+.certificate-card h1{
+  font-size: 28px;
+  font-family: sans-serif;
 }
-.heading{
-  font-size: 55px;
-  font-family: Montserrat;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.club1{
-  border: 0.2px solid gray;
-  display: flex;
-  margin-top: 10vh;
-  height: auto;
-  width: 80%;
-  border-radius: 28px;
-  box-shadow:  0px 0px 15px gray;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 30px;
-}
-.logo img{
-  clip-path: circle();
-  height: max-content;
-  width: 150px;
-}
-.text{
-  font-size: 20px;
-  font-family: Inter;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-.text h1{
-  font-size: 35px;
-  text-align: center;
-  font-weight: 600;
-  font-family: Montserrat;
-}
-.durations{
-  font-weight: 300;
-  font-size: 18px;
-  text-align: center;
-  font-style: italic;
-}
-.highlight{
-  text-align: center;
-  font-weight: 600;
-  font-style: italic;
-  font-family: Inter;
-}
-.text ul{
-  list-style-type:circle;
-}
-.projects{
-  height: auto;
-}
-.proj-title {
-  font-size: 35px;
-  font-family: Montserrat;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.proj-title h2{
- font-size: 55px;
-}
-.prj-text{
-  border: 1px solid gray;
-  width: 80%;
-  margin: 50px;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px grey;
-}
-.Amazon-clone{
-  font-size: 40px;
-  text-align: center;
-  font-family:Inter;
-}
-.description{
-  display: flex;
-  align-items: center;
-}
-.made-with{
-  font-size: 25px;
-  font-family: "Montserrat";
-  gap: 15px;
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-}
-.made-with i{
-  font-size: 30px;
-}
-.prj-text button {
-  font-size: 20px;
-  font-family: Montserrat;
-  border: 2px solid black;
-  padding: 10px;
-  border-radius: 20px;
-}
-.prj-text button:hover{
-  background-color: black;
-  color: white;
-  transition: linear 0.1s;
-}
-.description{
-  display: flex;
-}
-.description p{
-  font-size: 20px;
-}
-.prj-text img{
-  height: auto;
-  width: 180px;
-  clip-path: circle();
-}
-footer {
+.card-content{
   display: flex;
   justify-content: space-around;
-  text-align: center;
-  font-family: Montserrat;
-  align-items: center;
-  height: auto;
-  font-size: 16px; 
-} 
-footer p{
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
+.certificate-card button{
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 100px;
+  text-align: center;
+}
+.certificate-card button:hover{
+  background-color: #555;
+  transition: all 0.1s;
+}
+.card-content img{
+  width: 30vh;
+  height: auto;
+}
+ .projects {
+   background-color: black;
+   color: white;
+   margin-top: 20vw;
+ }
+ .project-card {
+   border: 1px solid white;
+   padding: 15px;
+   border-radius: 16px;
+   width: 70%;
+   margin: 0 auto;
+   margin-top: 5vh;
+ }
+
+ .project-card h1 {
+   font-size: 28px;
+   font-weight: 700;
+ }
+
+ .proj-title {
+   font-size: 48px;
+   font-family: sans-serif;
+   text-align: center;
+ }
+
+ .proj-title h2 {
+   font-size: 28px;
+ }
+
+ .proj-title h1 {
+   background: linear-gradient(90deg, #ff105f, #ffad06);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ .description {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+
+ .description p {
+   width: 100%;
+ }
+
+ .techstack ul {
+   display: flex;
+   gap: 10px;
+   margin-top: 20px;
+   align-items: center;
+ }
+
+ .techstack ul li {
+   border: 1px solid rgb(117, 117, 117);
+   padding: 5px;
+   font-size: 14px;
+   border-radius: 10px;
+   width: 180px;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   text-align: center;
+ }
+
+ .preview-button button {
+   font-size: 16px;
+   font-family: sans-serif;
+   border: 0.1px solid rgb(110, 110, 110);
+   padding: 8px;
+   border-radius: 8px;
+   margin: 5px;
+   margin-top: 20px;
+ }
+
+ .preview-button button i {
+   font-size: 14px;
+ }
+
+ .preview-button button:hover {
+   background-color: #424242;
+   transition: all 0.2s;
+   transform: scale(1.07);
+ }
+
+ .description img {
+   height: 10vh;
+   width: auto;
+   clip-path: circle();
+ }
+
+
+ footer {
+   border-top: 1px solid white;
+   font-size: 16px;
+   color: white;
+   height: 10vh;
+   margin: 5vh;
+ }
+
+ footer p {
+   text-align: center;
+   font-family: sans-serif;
+   margin-top: 5vh;
+ }

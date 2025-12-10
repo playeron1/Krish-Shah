@@ -1,60 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Krish Shah </title>
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="icon" type="avataaars" href="img/Krish Shah.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/Krish Shah.png">
 </head>
-
 <body>
   <header>
+    <img src="img/wallpaper1.jpg" alt="" srcset="">
     <nav>
       <div class="logo">
-        <h1><img src="img/Krish Shah.png" style="height: auto;width: 10vh;"></h1>
+        <img src="img/Krish Shah.png" style="height: auto;width: 10vh;margin-right: 15vh;">
       </div>
       <ul class="menuList" id="menuList">
-        <li><a class="hover:text-gray-300 transition-colors" href="#about">About</a></li>
-        <li><a class="hover:text-gray-300 transition-colors" href="#skills">Skills</a></li>
-        <li><a class="hover:text-gray-300 transition-colors" href="#experience">Experience</a></li>
-        <li><a class="hover:text-gray-300 transition-colors" href="#projects">Projects</a></li>
-        <li><a href="">Blogs</a></li>
-        <li><a class=" resume hover:text-gray-300 transition-colors" href="https://resume-bice-mu.vercel.app/"
-            target="_blank">Resume</a></li>
+        <li><a class="hover:text-gray-300" href="#about">About</a></li>
+        <li><a class="hover:text-gray-300" href="#skills">Skills</a></li>
+        <li><a class="hover:text-gray-300" href="#experience">Experience</a></li>
+        <li><a class="hover:text-gray-300" href="#projects">Projects</a></li>
+        <li><a class=" resume hover:text-gray-300" href="https://resume-bice-mu.vercel.app/" target="_blank">Resume</a></li>
       </ul>
       <button class="menu-icon md:hidden" onclick="toggleMenu()">
         <i class="fa-solid fa-bars text-white"></i>
       </button>
     </nav>
-    <div class="profile-name">
+  </header>
+  <div class="profile-name">
       <h1>I'm Krish</h1>
-      <h2>Cybersecurity Enthusiast <br> & Full Stack Developer</h2>
+      <h2>Software Developer | Builder | Turning ideas into production-ready software</h2>
       <div class="socialMedia">
-        <a href="https://www.linkedin.com/in/krish-shah-1b1b3b1b3/" target="_blank"><i
-            class="fa-brands fa-linkedin-in"></i></a>
-        <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-hackerrank"></i></a>
+        <a href="https://www.linkedin.com/in/krish-shah-1b1b3b1b3/" target="_blank"><i class="fa-brands fa-linkedin-in text-center"></i></a>
+        <a href="https://github.com/playeron1" target="_blank"><i class="fa-brands fa-github"></i></a>
       </div>
     </div>
-  </header>
   <section class="intro" id="about">
     <div class="intro-text">
       <h1>About Me </h1>
       <div class="whoami-box">
-        <img src="/img/pic.jpg" style="height: 40vh; clip-path: circle();">
+        <img src="img/pic.jpg" style="height: 30vh; clip-path: circle();margin-right: 120px;">
         <p>I graduated with majors in Computer Science Engineering from GITAM University. I am passionate about
           cybersecurity and web development with hands-on experience using security tools, ethical hacking, and bug
           bounty programs.</p>
@@ -63,87 +52,73 @@
   </section>
 
   <section class="services" id="skills">
-    <h2>Technical Expertise</h2>
-    <h3>Always ready to try hands-on new and emerging technologies</h3>
+    <h2>Tech Arsenal</h2>
+    <h3><em>A developers toolkit</em></h3>
     <div class="expertise">
       <div class="card">
         <div class="cardText">
-          <p> <i class="fa-brands fa-html5 text-blue-500 text-2xl"></i>HTML</p>
-          <p><i class="fa-brands fa-css3-alt text-orange-600 text-2xl"></i>CSS</p>
-          <p><i class="fa-brands fa-sass text-red-400 text-2xl"></i>Saas</p>
-          <p><i class="fa-brands fa-js text-yellow-500 text-2xl"></i>Javascript</p>
-          <p><i class="fa-brands fa-react text-blue-400 text-2xl"></i>React</p>
-          <p><i class="fa-brands fa-node-js text-green-600 text-2xl"></i> NodeJS</p>
-          <p><i class="fa-brands fa-java text-orange-600 text-2xl"></i> Java</p>
-          <p><img width="30" height="37" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1" /> Python
-          </p>
-          <p><i class="fa-brands fa-git-alt text-orange-600 text-2xl"></i> Git</p>
-          <p><i class="fa-brands fa-github text-2xl"></i> Github</p>
-          <p><i class="fa-brands fa-ubuntu text-orange-600 text-2xl"></i> Linux</p>
-          <p><img width="35" height="37" src="https://img.icons8.com/color/48/amazon-web-services.png"
-              alt="amazon-web-services" style="filter: invert(1);" />AWS</p>
-          <p><i class="fa-brands fa-npm text-red-600 text-2xl"></i>npm</p>
-          <p><img width="30" height="37" src="https://img.icons8.com/color/48/tailwindcss.png"
-              alt="tailwindcss" />tailwind css</p>
-          <p><img width="25" height="37"
-              src="https://img.icons8.com/external-those-icons-flat-those-icons/24/external-MySQL-programming-and-development-those-icons-flat-those-icons.png"
-              alt="external-MySQL-programming-and-development-those-icons-flat-those-icons" />My SQL</p>
-          <p><img src="img/images.png" style="clip-path: circle(); height: 2.5vh;">Vercel</p>
-          <p><img src="img/fastapi.png" style="height: 2.5vh;">Fast API</p>
+          <i class="fa-brands fa-html5 text-4xl text-blue-400"></i>
+          <i class="fa-brands fa-css3 text-4xl text-orange-500"></i>
+          <i class="fa-brands fa-square-js text-4xl text-yellow-500"></i>
+          <i class="fa-brands fa-react text-4xl text-blue-500"></i>
+          <i class="fa-brands fa-node-js text-4xl text-green-600"></i>
+          <img width="67" height="107" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1" />
+          <i class="fa-brands fa-git-alt text-4xl text-orange-600"></i>
+          <i class="fa-brands fa-github text-4xl"></i>
+          <i class="fa-brands fa-ubuntu text-4xl text-orange-500"></i>
+          <i class="fa-brands fa-aws text-4xl"></i>
+          <i class="fa-brands fa-docker text-4xl text-blue-500"></i>
+          <i class="fa-brands fa-npm text-red-500 text-4xl"></i>
+          <img width="65" height="107" src="https://img.icons8.com/color/48/tailwindcss.png" alt="tailwindcss" />
+          <img src="img/vercel.png" alt="" width="65" height="107">
         </div>
       </div>
+    </div>
+    <h2>Github Contributions</h2>
+    <div class="calendar">
+      <img src="https://ghchart.rshah.org/playeron1?&background=0D1117 &border=0D1117 &stroke=FF4500 &ring=FF4500 &fire=FF0000
+      &currStreakNum=FF4500 &sideNums=FF4500 &currStreakLabel=FF4500 &sideLabels=FF4500 &dates=FFA500" alt="GitHub Contribution Chart"/>
     </div>
   </section>
   <section class="profession" id="experience">
-    <h1>All my academic and professional experience with some milestones achieved are summed up here:</h1>
     <h2>Professional Experience</h2>
-    <div class="timeline">
-      <div class="timeline_event">
-        <div class="timeline_event_icon">
-          <img src="img/palo-icon.png" alt="Palo Alto Networks">
-        </div>
-        <div class="timeline_event_content">
-          <div class="timeline_event_date">Sept 2023 - Nov 2023</div>
-          <div class="timeline_event_title">
-            <h1>Palo Alto Networks - Cybersecurity Virtual Internship</h1>
-          </div>
-        </div>
-      </div>
-      <div class="timeline_event">
-        <div class="timeline_event_icon">
-          <img src="img/gitam-logo.png" alt="GITAM">
-        </div>
-        <div class="timeline_event_content">
-          <div class="timeline_event_date">Dec 2023 - March 2023</div>
-          <div class="timeline_event_title">
-            <h1>Python Developer</h1>
-          </div>
-        </div>
-      </div>
-      <div class="timeline_event">
-        <div class="timeline_event_icon">
-          <img src="img/Google__G__logo.svg.png" alt="Google">
-        </div>
-        <div class="timeline_event_content">
-          <div class="timeline_event_date">Jan 2024 - March 2024</div>
-          <div class="timeline_event_title">
-            <h1>Google - Android Development Virtual Internship</h1>
-          </div>
-        </div>
-      </div>
-      <div class="timeline_event">
-        <div class="timeline_event_icon">
-          <img src="img/Allied_Market_Research.png" alt="Allied Market Research">
-        </div>
-        <div class="timeline_event_content">
-          <div class="timeline_event_date">May 2024 - July 2024</div>
-          <div class="timeline_event_title">
-            <h1>Summer Research Intern</h1>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h1><em>All my academic and professional experience with some milestones achieved are summed up here: </em></h1>
   </section>
+  <div class="timeline">
+        <div class="container left">
+            <div class="textbox">
+                <h1>Palo Alto Networks - Cybersecurity Virtual Internship</h1>
+                <img src="img/palo-icon.png" alt="Palo Alto Networks">
+                <small><em>Sept 2023 - Nov 2023</em></small>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <div class="container right">
+            <div class="textbox">
+                <h1>Python Developer</h1>
+                <img src="img/gitam-logo.png" alt="GITAM">
+                <small><em>Dec 2023 - March 2023</em></small>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div>
+        <div class="container left">
+            <div class="textbox">
+              <h1>Google - Android Development Virtual Internship</h1>
+              <img src="img/Google__G__logo.svg.png" alt="Google">
+              <small><em>Jan 2024 - March 2024</em></small>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <div class="container right">
+            <div class="textbox">
+              
+                <h1>Summer Research Intern</h1>
+              <img src="img/Allied_Market_Research.png" alt="Allied Market Research">
+                <small><em>May 2024 - July 2024</em></small>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div>
+    </div>
   <section class="clubs">
     <div class="heading">
       <h1>Volunteering Experience</h1>
@@ -181,43 +156,57 @@
   </section>
     <section class="certification">
       <div class="certificates">
-        <h2>Verify my expertise</h2>
         <h1>My Certifications</h1>
+        <h2>Verify my expertise</h2>
       </div>
-        <div class="certificate-card">
-          <h1><i class="fa-brands fa-google"></i> Google Professional <br> Cybersecurity Certificate</h1>
-          <div class="card-content">
-            <img src="img/google_cybersec_cert.png">
+        <div class="certificate-wrapper">
+          <div class="certificate-card">
+            <i class="fa-brands fa-google"></i>
+            <div class="card-content">
+              <img src="img/google_cybersec_cert.png">
+            </div>
           </div>
-          <button>View</button>
+          <div class="certificate-card">
+            <h1><i class="fa-brands fa-hackerrank"></i> Hacker Rank<br>SQL (Basic)</h1>
+            <div class="card-content">
+              <img src="img/SQL-cert-1.png" alt="" href="https://www.hackerrank.com/profile/krishnshah2003" style="margin-top: 15px; border-radius: 10px;">
+            </div>
+          </div>
+          <div class="certificate-card">
+            <h1><i class="fa-brands fa-hackerrank"></i> Hacker Rank<br>SQL (Advanced)</h1>
+            <div class="card-content">
+              <img src="img/SQL-cert-1.png" alt="" href="https://www.hackerrank.com/profile/krishnshah2003" style="margin-top: 15px; border-radius: 10px;">
+            </div>
+          </div>
+          <div class="certificate-card">
+            <h1><i class="fa-brands fa-aws"></i>Amazon Web Services<br>Certified Cloud Practitioner</h1>
+            <div class="card-content">
+              <img src="img/aws-ccp.png" alt="" href="https://www.hackerrank.com/profile/krishnshah2003" style="margin-top: 15px; border-radius: 10px;">
+            </div>
+          </div>
         </div>
     </section>
-
-
-
   </section>
   <div class="projects" id="projects">
     <div class="proj-title">
-      <h2>Explore my creations</h2>
       <h1>My Projects</h1>
+      <h2>Explore my creations</h2>
     </div>
-    <div class="project-card">
+    <div class="project-list">
+      <div class="project-card">
       <h1>Amazon Clone</h1>
       <div class="description">
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore illum iste soluta laborum quas
-          perspiciatis et, minus nihil doloremque numquam velit aut quidem laudantium qui commodi! Pariatur libero
-          reiciendis facilis.
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore illum iste soluta laborum quas perspiciatis et, minus nihil doloremque numquam velit aut quidem laudantium qui commodi! Pariatur libero reiciendis facilis.
         </p>
       </div>
       <div class="techstack">
         <ul>
-          <li><i class="fa-brands fa-html5 text-blue-700"></i> HTML</li>
-          <li><i class="fa-brands fa-css3-alt text-orange-600"></i> CSS</li>
-          <li><i class="fa-brands fa-square-js text-yellow-500"></i> Javascript</li>
+          <li><i class="fa-brands fa-html5 text-blue-700"></i></li>
+          <li><i class="fa-brands fa-css3-alt text-orange-600"></i></li>
+          <li><i class="fa-brands fa-square-js text-yellow-200"></i></li>
         </ul>
         <div class="preview-button">
           <button><i class="fa-brands fa-github"></i> Github</button>
-          <button><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</button>
         </div>
       </div>
     </div>
@@ -231,13 +220,12 @@
       </div>
       <div class="techstack">
         <ul>
-          <li><i class="fa-brands fa-html5 text-blue-700"></i> HTML</li>
-          <li><i class="fa-brands fa-css3-alt text-orange-600"></i> CSS</li>
-          <li><i class="fa-brands fa-square-js text-yellow-500"></i> Javascript</li>
+          <li><i class="fa-brands fa-html5 text-blue-700"></i></li>
+          <li><i class="fa-brands fa-css3-alt text-orange-600"></i></li>
+          <li><i class="fa-brands fa-square-js text-yellow-500"></i></li>
         </ul>
         <div class="preview-button">
           <button><i class="fa-brands fa-github"></i> Github</button>
-          <button><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</button>
         </div>
       </div>
     </div>
@@ -251,63 +239,16 @@
       </div>
       <div class="techstack">
         <ul>
-          <li><i class="fa-brands fa-html5 text-blue-700"></i> HTML</li>
-          <li><i class="fa-brands fa-css3-alt text-orange-600"></i> CSS</li>
-          <li><i class="fa-brands fa-square-js text-yellow-500"></i> Javascript</li>
+          <li><i class="fa-brands fa-html5 text-blue-700"></i></li>
+          <li><i class="fa-brands fa-css3-alt text-orange-600"></i></li>
+          <li><i class="fa-brands fa-square-js text-yellow-500"></i></li>
         </ul>
         <div class="preview-button">
           <button><i class="fa-brands fa-github"></i> Github</button>
-          <button><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</button>
         </div>
       </div>
     </div>
-    <div class="project-card">
-      <h1>Web Application Vulnerability Scanner</h1>
-      <div class="description">
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore illum iste soluta laborum quas
-          perspiciatis et, minus nihil doloremque numquam velit aut quidem laudantium qui commodi! Pariatur libero
-          reiciendis facilis.
-        </p>
-      </div>
-      <div class="techstack">
-        <ul>
-          <li><i class="fa-brands fa-html5 text-blue-700"></i> HTML</li>
-          <li><i class="fa-brands fa-css3-alt text-orange-600"></i> CSS</li>
-          <li><i class="fa-brands fa-python text-blue-400"></i> Python</li>
-          <li><img width="20" height="auto" src="https://img.icons8.com/ios/50/flask.png" ;alt="flask"
-              style="filter: invert(1);" /> Flask</li>
-        </ul>
-        <div class="preview-button">
-          <button><i class="fa-brands fa-github"></i> Github</button>
-          <button><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</button>
-        </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <h1>Cybersecurity Home Lab</h1>
-      <div class="description">
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore illum iste soluta laborum quas
-          perspiciatis et, minus nihil doloremque numquam velit aut quidem laudantium qui commodi! Pariatur libero
-          reiciendis facilis.
-        </p>
-      </div>
-      <div class="techstack">
-        <ul>
-          <li><i class="fa-brands fa-ubuntu text-orange-700"></i> Ubuntu</li>
-          <li><img width="20" height="auto" src="https://img.icons8.com/fluency/48/vmware-workstation-player.png"
-              alt="vmware-workstation-player" /> VM Ware</li>
-          <li><img src="img/Virtualbox_logo.png" style="height:auto;width: 3vh;clip-path:circle();">Virtual Box</li>
-          <li><img src="img/kali-linux2962.jpg" style="height:auto;width:5vh;clip-path:circle();justify-content:center">
-            Kali Linux</li>
-        </ul>
-        <div class="preview-button">
-          <button><i class="fa-brands fa-github"></i> Github</button>
-          <button><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</button>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="project-card">
+  <div class="project-card">
       <h1>Ransomeware Demo</h1>
       <div class="description">
         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore illum iste soluta laborum quas
@@ -317,31 +258,20 @@
       </div>
       <div class="techstack">
         <ul>
-          <li><i class="fa-brands fa-python text-blue-500"></i> Python</li>
-          <li><i class="fa-brands fa-kaggle"></i> Kaggle</li>
+          <li><i class="fa-brands fa-python text-blue-500"></i></li>
         </ul>
         <div class="preview-button">
           <button><i class="fa-brands fa-github"></i> Github</button>
-          <button><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</button>
         </div>
       </div>
     </div>
+    </div>   
+  </div>
     <footer class="ending ">
       <p class="designed-by"><i class="fa-regular fa-copyright"></i> 2025 Krish Shah. All rights reserved</p>
       </p>
     </footer>
-    <script>
-      let menuList = document.getElementById("menuList")
-      menuList.style.maxHeight = "0px";
-      function toggleMenu() {
-        if (menuList.style.maxHeight == "0px") {
-          menuList.style.maxHeight = "500px";
-        }
-        else {
-          menuList.style.maxHeight = "0px";
-        }
-      }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

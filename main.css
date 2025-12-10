@@ -1,572 +1,633 @@
- @tailwind base;
- @tailwind components;
- @tailwind utilities;
-
- @media(max-width: 768px) {
-   nav ul.menuList {
-     position: fixed;
-     top: 90px;
-     left: 0;
-     right: 0;
-     background-color: rgb(0, 0, 0);
-     flex-direction: column;
-     gap: 0;
-     max-height: 0;
-     overflow: hidden;
-     transition: max-height 0.3s ease-in-out;
-     z-index: 100;
-     border: 1px solid white;
-   }
-
-   nav ul.menuList.active {
-     max-height: 500px;
-   }
-
-   nav ul li {
-     padding: 15px;
-     width: 100%;
-     text-align: center;
-   }
-
-   section {
-     padding: 10px 0;
-   }
-
-   .whoami-box {
-     display: flex;
-     flex-wrap: wrap;
-     gap: 32px;
-     padding: 10px;
-     width: 100%;
-     align-items: center;
-     text-align: center;
-     margin-bottom: 200px;
-   }
-
-   .whoami-box img {
-     display: none;
-   }
-
-   /* Fix expertise grid */
-   .expertise {
-     display: grid;
-     grid-template-columns: repeat(auto-fit);
-     width: 100%;
-   }
-
-   .box {
-     width: 100%;
-     display: grid;
-     grid-template-columns: repeat(auto-fit);
-     align-items: center;
-     justify-content: center;
-   }
-
-   .clubs {
-     height: auto;
-   }
-
-   .text {
-     height: auto;
-   }
-
-   .timeline_event {
-     display: flex;
-     flex-wrap: wrap;
-   }
-
-   .timeline_event_date {
-     width: 200px;
-   }
-
-   .timeline_event_icon img {
-     margin-left: 100px;
-     width: 200px;
-     height: auto;
-   }
-
-   /* Fix clubs section */
-   .club1 {
-     display: flex;
-     flex-wrap: wrap;
-     gap: 2rem;
-     padding: 2rem;
-     margin: 1rem auto;
-     max-width: 1000px;
-     background: white;
-     border-radius: 8px;
-     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-   }
-
-   .club1 img {
-     display: none;
-     font-size: 6px;
-   }
-
-   /* Fix projects layout */
-   .prj-text {
-     margin-bottom: 600px;
-   }
-
-   .description img {
-     display: none;
-   }
- }
-
- /* Fix content containers */
-
- /* -------------------------------------------------------------------------------------------------------------------*/
- /*Desktop CSS*/
- * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   scroll-behavior: smooth;
-   scrollbar-width: thin;
-   scrollbar-color: #022c43;
- }
-
- /* Fixed background image path and added fallback color */
- header {
-   background: url(img/wallpaper1.jpg) no-repeat center center/cover;
-   background-color: #022c43;
-   width: 100%;
-   height: 100vh;
-   position: relative;
- }
-
- body {
-   background-color: black;
- }
-
- /* Fixed navigation styles */
- nav {
-   font-family: sans-serif;
-   display: flex;
-   flex: 1;
-   padding: 10px 20px;
-   align-items: center;
-   justify-content: space-around;
-   background-color: black;
-   z-index: 1000;
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
- }
-
- .logo {
-   color: white;
-   font-size: 40px;
-   background: linear-gradient(90deg, #ff105f, #ffad06);
-   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
-
- nav ul {
-   display: flex;
-   gap: 60px;
-   list-style-type: none;
-   flex-direction: row;
-   align-items: center;
- }
-
- nav ul li {
-   color: white;
-   font-size: 18px;
- }
-
- nav ul li a {
-   padding: 5px;
-   border-radius: 5px;
- }
-
- nav ul li a:hover {
-   background-color: rgb(127, 114, 114);
-   transition: ease-in-out 0.1s;
- }
-
- nav ul li a.resume {
-   border: 1px solid gray;
-   padding: 10px 10px;
-   border-radius: 5px;
-   background-color: transparent;
-   color: white;
- }
-
- nav ul li a.resume:hover {
-   background-color: rgb(44, 44, 44);
-   color: white;
-   transition: linear 0.1s;
- }
-
- nav .menu-icon {
-   display: hidden;
- }
-
- .menu-icon i {
-   color: white;
-   font-size: 30px;
- }
-
- .profile-name {
-   padding: 20px;
-   display: flex;
-   flex-direction: column;
-   margin-top: 20vh;
- }
-
- .profile-name h1 {
-   font-size: 50px;
-   font-family: Inter;
-   color: white;
-   background: linear-gradient(90deg, #ff105f, #ffad06);
-   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
-
- .profile-name h2 {
-   color: white;
-   font-size: 40px;
-   font-style: italic;
-   margin-top: 2vh;
- }
-
- .profile-name .socialMedia {
-   color: white;
-   font-size: 48px;
-   display: flex;
-   justify-content: left;
-   padding: 20px;
-   gap: 20px;
- }
-
- .availibility {
-   font-size: 30px;
-   font-family: Inter;
-   font-style: italic;
-   text-align: center;
- }
-
- .intro {
-   background: black;
-   color: white;
- }
-
- .intro-text h1 {
-   font-size: 50px;
-   font-family: Inter;
-   text-align: center;
-   padding: 20px;
-   background: linear-gradient(90deg, #ff105f, #ffad06);
-   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
-
- .whoami-box {
-   display: flex;
-   align-items: center;
-   gap: 30px;
-   margin-left: auto;
-   margin-right: auto;
-   justify-content: center;
-   width: 80%;
- }
-
- .whoami-box p {
-   font-family: sans-serif;
-   font-size: 20px;
-   text-align: left;
- }
-
- .services h2 {
-   font-size: 48px;
-   font-family: Inter;
-   text-align: center;
-   background: linear-gradient(90deg, #ff105f, #ffad06);
-   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
-
- .services h3 {
-   font-family: sans-serif;
-   text-align: center;
-   font-size: 16px;
- }
-
- .services {
-   color: white;
-   background: black;
-   margin-top: 5vh;
- }
-
- .expertise {
-   margin-top: 15vh;
- }
-
- .card {
-   font-size: 16px;
-   cursor: pointer;
-   text-align: center;
-   color: white;
- }
-
- .cardText {
-   display: flex;
-   gap: 10px;
-   flex-direction: row;
-   font-family: sans-serif;
-   text-align: center;
-   width: 70%;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   margin: 0 auto;
- }
-
- .cardText p:hover {
-   transform: translate(1);
-   background-color: white;
-   color: black;
-   transition: all 0.2s;
- }
-
- .cardText p {
-   border: 0.5px solid rgb(190, 190, 190);
-   border-radius: 5px;
-   color: white;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   padding: 5px;
-   height: 40px;
-   width: auto;
- }
-
- .cardText img,
- .cardText i {
-   margin-right: 10px;
-   text-align: center;
-   justify-content: center;
- }
-
- .profession {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   color: black;
-   background-color: black;
-   margin-top: 10vh;
- }
-
- .profession h1 {
-   color: white;
-   text-align: center;
-   margin-top: 10vh;
-   display: flex;
-   width: 90%;
-   justify-content: center;
- }
-
- .profession h2 {
-   font-family: sans-serif;
-   font-size: 48px;
-   color: white;
-   text-align: center;
-   background: linear-gradient(90deg, #ff105f, #ffad06);
-   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
-
- /* Timeline container */
- .timeline {
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
-   /* Add spacing between events */
-   padding: 20px;
-   margin: 0 auto;
-   margin-top: 10vh;
-   max-width: 800px;
-   /* Center and limit the width */
-   position: relative;
-   border-left: 4px solid white;
-   /* Vertical line for the timeline */
- }
-
- /* Timeline event */
- .timeline_event {
-   display: flex;
-   align-items: center;
-   gap: 20px;
-   position: relative;
-   padding: 15px;
-   background: #f9f9f9;
-   /* Light background for events */
-   border-radius: 10px;
-   margin-left: 20px;
-   /* Offset to align with the timeline */
- }
-
- /* Timeline event icon */
- .timeline_event_icon {
-   flex-shrink: 0;
-   width: 68px;
-   height: 68px;
-   padding: 10px;
-   border-radius: 50%;
-   background: white;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   border: 2px solid #022c43;
- }
-
- .timeline_event_icon img {
-   clip-path: circle();
- }
-
- /* Timeline event date */
- .timeline_event_date {
-   font-size: 14px;
-   color: #555;
-   font-weight: bold;
-   margin-top: 5px;
- }
-
- /* Timeline event content */
- .timeline_event_content {
-   flex: 1;
- }
-
- .timeline_event_title h1 {
-   font-size: 18px;
-   color: #022c43;
-   margin: 0;
- }
-
- /* Add a dot on the timeline */
- .timeline_event::before {
-   content: "";
-   position: absolute;
-   left: -12px;
-   top: 50%;
-   transform: translateY(-50%);
-   width: 12px;
-   height: 12px;
-   background: #022c43;
-   border-radius: 50%;
-   border: 2px solid white;
- }
-
- /* Hover effect for events */
- .timeline_event:hover {
-   background: #e6f7ff;
-   /* Light blue background on hover */
-   transform: translateX(5px);
-   /* Slight movement */
-   transition: all 0.3s ease;
- }
-
- /* Clubs Section */
- .clubs {
-   background-color: black;
-   color: white;
-   font-family: sans-serif;
-   padding: 40px 20px;
-   text-align: center;
- }
-
- .heading h1 {
-   font-size: 38px;
-   background: linear-gradient(90deg, #ff105f, #ffad06);
-   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
-
- /* Club Container */
- .club-container {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 20px;
-   justify-content: center;
- }
-
- /* Club Card */
- .club-card {
-   background-color: #ffffff;
-   color: #022c43;
-   border-radius: 15px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   width: 300px;
-   padding: 20px;
-   text-align: center;
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
- }
-
- .club-card:hover {
-   transform: translateY(-10px);
-   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
- }
-
- /* Club Logo */
- .club-logo img {
-   clip-path: circle();
-   width: 100px;
-   height: 100px;
-   margin-bottom: 15px;
- }
-
- /* Club Details */
- .club-name {
-   font-size: 24px;
-   font-weight: bold;
-   margin-bottom: 10px;
- }
-
- .club-duration {
-   font-size: 16px;
-   font-weight: 300;
-   margin-bottom: 10px;
- }
-
- .club-highlight {
-   font-size: 18px;
-   font-weight: 600;
-   margin-bottom: 10px;
- }
-
- .club-list {
-   list-style-type: disc;
-   text-align: left;
-   margin: 0 auto;
-   padding: 0;
-   max-width: 250px;
- }
-
- .club-list li {
-   font-size: 14px;
-   margin-bottom: 5px;
- }
-.certification{
+/* Tailwind directives (uncomment if using Tailwind/PostCSS build) */
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
+@media (max-width: 768px) {
+  /* show the hamburger/menu icon on small screens */
+   ul.menuList {
+    display: block;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  /* mobile menu container */
+  nav ul.menuList {
+    position: fixed;
+    top: 60px; /* positioned just below the fixed nav */
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 2;
+    background: white;
+  }
+
+  /* visible state when JS toggles the active class */
+  nav ul.menuList.active {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  nav ul.menuList li {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  nav .menu-icon {
+    display: block; /* use display:block in your mobile media query if you want the hamburger visible */
+  }
+
+  /* ensure readable text on the white mobile menu */
+  nav ul.menuList li a {
+    color: black;
+    font-weight: bold;
+  }
+
+  .profile-name{
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  .intro{
+    margin-top: 150px;
+  }
+
+  .menu-icon i {
+    color: white;
+    font-weight: bold;
+    display: block;
+  }
+
+  section {
+    padding: 10px 0;
+  }
+
+  .whoami-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px; /* reduced to avoid excessive vertical overflow on small screens */
+  }
+
+  .whoami-box img {
+    display: block;
+  }
+
+  /* valid repeat() usage for responsive grids */
+  .expertise {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    justify-content: center;
+  }
+
+  .clubs {
+    height: auto;
+  }
+
+  .text {
+    height: auto;
+  }
+  .certificate-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  /* Fix clubs section */
+  .club1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 1000px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .club1 img {
+    display: none;
+    font-size: 6px;
+  }
+  /* Fix projects layout */
+  .prj-text {
+    margin-bottom: 40px; /* reduced to avoid excessive vertical overflow on small screens */
+  }
+
+  .description img {
+    display: none;
+  }
+}
+
+/* Fix content containers */
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #022c43;
+}
+
+/* prevent horizontal scrolling site-wide, allow normal vertical scrolling */
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100%;
+}
+
+header {
+  width: 100%;
+  z-index: -1;
+}
+body {
+  background-color: black;
+}
+
+nav {
+  font-family: sans-serif;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  position: fixed;
+  background-color: black;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo {
+  color: white;
+  background: linear-gradient(90deg, #ff105f, #ffad06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 80px;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav ul li {
+  color: white;
+  font-size: 18px;
+}
+nav ul li a.resume {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+}
+nav .menu-icon {
+  display: none; /* use display:block in your mobile media query if you want the hamburger visible */
+}
+
+.menu-icon i {
+  color: white;
+  font-size: 30px;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  text-align: left;
+  margin: 20px;
+  width: 100%;
+  font-size: 62px;
+  animation: appear 2s ease-in-out;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.profile-name h1 {
+  font-size: 50px;
+  font-family: Inter;
+  color: white;
+  background: linear-gradient(90deg, #ff105f, #ffad06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-name h2 {
+  font-size: 26px;
+  color: white;
+  font-family: Inter;
+  font-style: oblique;
+  text-align: center;
+}
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.socialMedia a, i{
+  color: white;
+  font-size: 32px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px;
+  gap: 15px;  
+}
+
+.intro {
+  background: black;
+  color: white;
+  animation: appear 0.5s;
+  animation-delay: 0.5s;
+}
+
+.intro-text h1 {
+  font-size: 50px;
+  font-family: Inter;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #ff105f, #ffad06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.whoami-box {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 50px;
+  width: 80%;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;  
+  box-shadow: 6px 8px 0px white;
+}
+
+.whoami-box p {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 70%;
+}
+
+.services h2 {
+  font-size: 48px;
+  font-family: Inter;
+  text-align: center;
+  background: linear-gradient(90deg, #ff105f, #ffad06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: appear 0.5s alternate;
+  margin-top: 150px;
+}
+
+
+.services h3 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 16px;
+  animation: appear 0.5s alternate;
+}
+
+.services {
+  color: white;
+}
+
+.expertise {
+  margin-top: 10vh;
+}
+.calendar img{
+  margin-top: 20px; border: 1px solid #ccc; padding: 15px; border-radius: 15px;color: white;
+  height: max-content; margin-left: auto; margin-right: auto; display: block;
+}
+.card{
+  width: 40%;
+  display: grid;
+  grid-template-columns:inherit;
+  margin: 0 auto;
+}
+
+.cardText {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.cardText i, .cardText img {
+  border: 0.75px solid grey;
+  padding: 10px 15px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+
+.cardText img,
+.cardText i, .cardText svg {
+  text-align: center;
+  justify-content: center;
+}
+
+.profession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  background-color: black;
+  margin-top: 10vh;
+}
+
+.profession h1 {
+  color: white;
+  text-align: center;
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
+
+.profession h2 {
+  font-family: sans-serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(90deg, #ff105f, #ffad06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.timeline {
+  max-width: 800px;
+  height: auto;
+  position: relative;
+  margin: 100px auto;
+  left: 0;
+  right: 0;
+}
+.container {
+  position: relative;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 50%;
+  opacity: 1;
+  /*animation: movedown 1s ease-in-out forwards;*/
+}
+@keyframes movedown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translateY(-1px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+.container:nth-child(4){
+    animation-delay: 3s;
+}
+.container:nth-child(5){
+    animation-delay: 4s;
+}
+
+.left
+{
+    left: 0;
+    right: 50%;
+}
+.right{
+    left: 50%;
+    right: 0;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(90deg, #ff105f, #ffad06);
+    top: 0;
+    left:48%;
+    margin-left: -3px;
+    z-index: -1;
+    /*animation: move 3s linear forwards;*/
+}
+@keyframes move{
+    from{
+        height: 0;
+    }
+    to{
+        height: 100%;
+    }
+}
+.textbox{
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 16px;
+    font-size: 15px;
+    background: white;
+    width: 40%;
+    box-shadow: 5px 7px 0px orangered;
+}
+.textbox h1{
+  font-weight: 800;
+  font-family: Inter;
+  text-align: center;
+}
+.textbox img{
+  height: 5vh;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  top: 0;
+}
+.textbox small{
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+}
+.left-container-arrow{
+    position:absolute;
+    height: 0;
+    width: 0;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    left: 16rem;
+}
+.right-container-arrow{
+    position:absolute;
+    height: 0;
+    width: 0;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    left: 6px;
+    rotate: 180deg;
+}
+/* Clubs Section */
+.clubs {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 38px;
+  background: linear-gradient(90deg, #ff105f, #ffad06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.club-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.club-card {
+  background-color: #ffffff;
+  color: #022c43;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  animation: appear 2s ease-in-out;
+  box-shadow: 5px 5px 0px grey;
+}
+.club-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.club-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.club-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+/* Club Logo */
+.club-logo img {
+  clip-path: circle();
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+/* Club Details */
+.club-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.club-duration {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.club-highlight {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.club-list {
+  list-style-type: disc;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 250px;
+}
+
+.club-list li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.certification {
   margin-top: 10vh;
   padding: 25px;
 }
-.certificates{
+.certificates {
   text-align: center;
 }
-.certificates h2{
+.certificates h2 {
   font-size: 16px;
   color: white;
 }
-.certificates h1{
+.certificates h1 {
   font-size: 48px;
   font-family: sans-serif;
   background: linear-gradient(90deg, #ff105f, #ffad06);
@@ -575,141 +636,154 @@
   -webkit-text-fill-color: transparent;
 }
 
-.certificate-card{
+.certificate-card {
   color: white;
   border: 1px solid white;
   padding: 15px;
   margin: 0 auto;
   width: fit-content;
   margin-top: 10vh;
+  justify-content: space-between;
   border-radius: 15px;
+  box-shadow: 5px 5px 0px grey;
 }
-.certificate-card h1{
-  font-size: 28px;
+.certificate-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.certificate-card:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s;
+}
+.certificate-card h1 {
+  font-size: 16px;
+  text-align: center;
   font-family: sans-serif;
 }
-.card-content{
+.card-content {
   display: flex;
   justify-content: space-around;
 }
-.certificate-card button{
+.certificate-card button {
   border: 1px solid white;
   border-radius: 10px;
   width: 100px;
   text-align: center;
 }
-.certificate-card button:hover{
+.certificate-card button:hover {
   background-color: #555;
   transition: all 0.1s;
 }
-.card-content img{
+.card-content img {
   width: 30vh;
   height: auto;
 }
- .projects {
-   background-color: black;
-   color: white;
-   margin-top: 20vw;
- }
- .project-card {
-   border: 1px solid white;
-   padding: 15px;
-   border-radius: 16px;
-   width: 70%;
-   color:white;
-   margin: 0 auto;
-   margin-top: 5vh;
- }
+.project-card {
+  border: 2px solid white;
+  padding: 15px;
+  border-radius: 16px;
+  width: auto;
+  color: white;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
 
- .project-card h1 {
-   font-size: 28px;
-   font-weight: 700;
- }
+.project-card h1 {
+  font-size: 18px;
+  text-align: center;
+}
 
- .proj-title {
-   font-size: 48px;
-   font-family: sans-serif;
-   text-align: center;
- }
+.proj-title {
+  font-size: 48px;
+  font-family: sans-serif;
+  text-align: center;
+}
 
- .proj-title h2 {
-   font-size: 28px;
- }
+.proj-title h1 {
+  background: linear-gradient(90deg, #ff105f, #ffad06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
- .proj-title h1 {
-   background: linear-gradient(90deg, #ff105f, #ffad06);
-   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
+.description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+.project-list{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: nowrap;
+  gap: 15px;
+  overflow-x: auto;
+}
 
- .description {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
- }
+.techstack ul {
+  display: flex;
+  width: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.techstack ul li i, .techstack ul li img {
+  font-size: 28px;
+}
 
- .description p {
-   width: 100%;
- }
+.techstack ul li {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
- .techstack ul {
-   display: flex;
-   gap: 10px;
-   margin-top: 20px;
-   align-items: center;
- }
+.preview-button button {
+  font-size: 16px;
+  font-family: sans-serif;
+  border: 2px solid rgb(110, 110, 110);
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
- .techstack ul li {
-   border: 1px solid rgb(117, 117, 117);
-   padding: 5px;
-   font-size: 14px;
-   border-radius: 10px;
-   width: 180px;
-   align-items: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-   text-align: center;
- }
+.preview-button button i {
+  font-size: 16px;
+}
 
- .preview-button button {
-   font-size: 16px;
-   font-family: sans-serif;
-   border: 0.1px solid rgb(110, 110, 110);
-   padding: 8px;
-   border-radius: 8px;
-   margin: 5px;
-   margin-top: 20px;
- }
+.preview-button button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s;
+  transform: scale(1.07);
+}
 
- .preview-button button i {
-   font-size: 14px;
- }
+.description img {
+  height: 10vh;
+  width: auto;
+  clip-path: circle();
+}
 
- .preview-button button:hover {
-   background-color: #424242;
-   transition: all 0.2s;
-   transform: scale(1.07);
- }
+footer {
+  border-top: 1px solid white;
+  font-size: 16px;
+  color: white;
+  height: 10vh;
+  margin: 5vh;
+}
 
- .description img {
-   height: 10vh;
-   width: auto;
-   clip-path: circle();
- }
-
-
- footer {
-   border-top: 1px solid white;
-   font-size: 16px;
-   color: white;
-   height: 10vh;
-   margin: 5vh;
- }
-
- footer p {
-   text-align: center;
-   font-family: sans-serif;
-   margin-top: 5vh;
- }
+footer p {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 5vh;
+}
